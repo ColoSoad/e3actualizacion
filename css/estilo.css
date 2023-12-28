@@ -274,35 +274,11 @@ h3 {
   .videos {
     justify-content: center;
   }
-  /* .item {
-    transition: all 0.5s;
-  }
-  .item:hover {
-    transition: all 1.5s;
-  }
-  .item1:hover {
-    transform: scale(1.23);
-  }
-  .item2:hover {
-    transform: scale(1.23);
-  }
-  .item3:hover {
-    transform: scale(1.23);
-  }
-  .item4:hover {
-    transform: scale(1.23);
-  }
-  .item5:hover {
-    transform: scale(1.23);
-  }
-  .item6:hover {
-    transform: scale(1.23);
-  } */
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .proyecto {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(6, 200px);
   }
 /* orden de los items */
   .item1{
@@ -328,24 +304,30 @@ h3 {
   }
 
   .item7{
+    padding: 25px 0 0 0;
     order: 1;
   }
   .item8{
+    padding: 25px 0 0 0;
     order: 2;
   }
 
   .item9{
+    padding: 25px 0 0 0;
     order: 5;
   }
 
   .item10{
+    padding: 25px 0 0 0;
     order: 6;
   }
   .item11{
+    padding: 25px 0 0 0;
     order: 9;
   }
 
   .item12{
+    padding: 25px 0 0 0;
     order: 11;
   }
 
@@ -369,60 +351,63 @@ h3 {
   .e-right3 {
     order: 5;
   }
-  /* .item {
-    transition: all 0.5s;
-  }
-  .item:hover {
-    transition: all 1.5s;
-  }
-  .item1:hover {
-    transform: scale(1.75) translate(30%, 0);
-  }
-  .item2:hover {
-    transform: scale(1.75) translate(-30%, 0);
-  }
-  .item3:hover {
-    transform: scale(1.75) translate(30%, 0);
-  }
-  .item4:hover {
-    transform: scale(1.75) translate(-30%, 0);
-  }
-  .item5:hover {
-    transform: scale(1.75) translate(30%, 0);
-  }
-  .item6:hover {
-    transform: scale(1.75) translate(-30%, 0);
-  } */
+
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* .proyecto {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
+  .proyecto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 200px);
   }
-  .item1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-  .item2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .item3 {
-    grid-column: 3/4;
-    grid-row: 1/3;
-  }
-  .item4 {
-    grid-column: 2/3;
-    grid-row: 2/4;
-  }
-  .item5 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  .item6 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  } */
+/* orden de los items */
+.item1{
+  order: 0;
+}
+.item2{
+  order: 3;
+}
+
+.item3{
+  order: 4;
+}
+
+.item4{
+  order: 7;
+}
+.item5{
+  order: 8;
+}
+
+.item6{
+  order: 12;
+}
+
+.item7{
+  padding: 25px 0 0 0;
+  order: 1;
+}
+.item8{
+  padding: 25px 0 0 0;
+  order: 2;
+}
+
+.item9{
+  padding: 25px 0 0 0;
+  order: 5;
+}
+
+.item10{
+  padding: 25px 0 0 0;
+  order: 6;
+}
+.item11{
+  padding: 25px 0 0 0;
+  order: 9;
+}
+
+.item12{
+  padding: 25px 0 0 0;
+  order: 11;
+}
   .e-right, .e-left2, .e-right3 {
     padding-top: 85px;
   }
@@ -440,38 +425,59 @@ h3 {
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1820px) {
-  /* .proyecto {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: repeat(2, 250px);
-    padding: 30px 300px 30px 300px;
-    grid-gap: 20px;
-    justify-content: center;
+  
+  
+  .proyecto {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 275px 150px 275px 150px;
   }
-  .item {
-    transition: all 0.5s;
+
+  /* Orden de los items */
+  .item1{
+    order: 0;
   }
-  .item:hover {
-    transition: all 3s;
+  .item2{
+    order: 1;
   }
-  .item1:hover {
-    transform: scale(2.5) translate(45%, 0%);
+  
+  .item3{
+    order: 2;
   }
-  .item2:hover {
-    transform: scale(2.5);
+  
+  .item4{
+    order: 6;
   }
-  .item3:hover {
-    transform: scale(2.5) translate(-45%, 0%);
+  .item5{
+    order: 7;
   }
-  .item4:hover {
-    transform: scale(2.5) translate(45%, -40%);
+  
+  .item6{
+    order: 8;
   }
-  .item5:hover {
-    transform: scale(2.5) translate(0, -40%);
+  
+  .item7{
+    order: 3;
   }
-  .item6:hover {
-    transform: scale(2.5) translate(-45%, -40%);
-  } */
+  .item8{
+    order: 4;
+  }
+  
+  .item9{
+    order: 5;
+  }
+  
+  .item10{
+    order: 9;
+  }
+  .item11{
+    order: 10;
+  }
+  
+  .item12{
+    order: 11;
+  }
+/* Fin orden de los items */
+  
   .e-right, .e-left2, .e-right3 {
     padding-top: 85px;
   }
@@ -488,5 +494,3 @@ h3 {
     filter: grayscale(0);
   }
 }
-
-/*# sourceMappingURL=estilo.css.map */
