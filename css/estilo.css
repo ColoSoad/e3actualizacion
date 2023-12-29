@@ -86,6 +86,10 @@ h1 {
   grid-gap: 20px;
 }
 
+.navbar-toggler {
+border: 0;
+}
+
 .proy{
   padding: 0%;
   text-align: start;
@@ -95,23 +99,27 @@ h1 {
 }
 
 .caro{
-  height: 850px;
+  height: 650px;
   background: linear-gradient(#2A3A47, #000, #000, #2A3A47);
 }
 .carou{
-  padding: 25px 0 20px 0;
-  height: 650px;
+  padding: 100px 25px 100px 25px;
+  height: 450px;
   object-fit: cover;
 }
 
+.icons{
+  padding: 0 0 0 20px;
+  height: 20px;
+}
+
 .item {
-  border: 2px solid #fff;
   background-size: cover;
   background-position: center;
 }
 
 .item1 {
-  background-image: url(../multimedia/img/img1.jpg);
+  background-image: url(../multimedia/img/cabañaSL\ \(1\).jpg);
 }
 
 .item2 {
