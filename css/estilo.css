@@ -103,7 +103,7 @@ border: 0;
   background: linear-gradient(#2A3A47, #000, #000, #2A3A47);
 }
 .carou{
-  padding: 100px 25px 100px 25px;
+  padding: 75px 0 75px 0;
   height: 450px;
   object-fit: cover;
 }
