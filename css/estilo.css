@@ -172,7 +172,7 @@ h1 {
   font-size: 30px;
   color: grey;
   position: relative;
-  left: 150px;
+  right: 0px;
   top: 0px;
   text-align: center;
 }
