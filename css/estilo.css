@@ -112,12 +112,17 @@ h1 {
   text-shadow: 0 0 1px #000;
 }
 
-.caro{
-  height: 650px;
-  background: linear-gradient(#2A3A47, #000, #000, #2A3A47);
+.caba{
+  background-color: #000;
 }
+
+.caro{
+  display: grid;
+  align-items: center;
+  height: 550px;
+}
+
 .carou{
-  padding: 75px 0 75px 0;
   height: 450px;
   object-fit: cover;
 }
@@ -169,73 +174,20 @@ h1 {
 }
 
 .close{
-  font-size: 30px;
+  height: 60px;
+  width: 60px;
   color: grey;
-  position: relative;
-  right: 420px;
-  top: 0px;
+  position: fixed;
+  right: 5px;
+  top: 10px;
   text-align: center;
+  line-height: 40px;
+  font-size: 27px;
 }
 
-.e-left {
-  padding: 100px 0 0 0;
-  height: 450px;
-  background-image: url(../multimedia/img/left1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-dl {
-  padding: 25px 30px 95px 30px;
-  color: #fff;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-span {
-  font-size: 30px;
+.close:hover {
   color: grey;
-}
-
-dd {
-  font-size: 20px;
-}
-
-.e-right2 {
-  height: 450px;
-  background-image: url(../multimedia/img/left2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.e-left3 {
-  height: 450px;
-  background-image: url(../multimedia/img/left3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-video {
-  height: 570px;
-  width: 320px;
-}
-
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.izq, .centro, .der {
-  padding: 30px;
-}
-
-.row {
-  justify-content: center;
-}
-
-.areatext {
-  padding: 30px 0 0 0;
+  font-size: 32px;
 }
 
 h2 {
