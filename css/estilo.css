@@ -112,19 +112,17 @@ h1 {
   text-shadow: 0 0 1px #000;
 }
 
-.caba{
+.slidd{
   background-color: #000;
 }
 
-.caro{
-  display: grid;
-  align-items: center;
-  height: 550px;
+.slidcar{
+  height: 650px;
 }
 
-.carou{
-  height: 450px;
-  object-fit: cover;
+.slidecar{
+  padding: 200px 0 0 0;
+  height: 550px;
 }
 
 .icons{
@@ -179,7 +177,7 @@ h1 {
   color: grey;
   position: fixed;
   right: 5px;
-  top: 10px;
+  top: 40px;
   text-align: center;
   line-height: 40px;
   font-size: 27px;
