@@ -79,18 +79,6 @@ h1 {
   text-shadow: 0 0 2px #000000;
 }
 
-.titulo{
-  height: 60px;
-  background-color: grey;
-  margin: 30px;
-  display: grid;
-  place-items: center;
-}
-
-.titles{
-  padding: 10px 0 0 10px;
-}
-
 .proyecto {
   display: grid;
   grid-template-columns: 1fr;
@@ -134,7 +122,7 @@ h1 {
 
 .slidecar{
   padding: 200px 0 0 0;
-  height: 550px;
+  height: 350px;
 }
 
 .icons{
@@ -148,7 +136,7 @@ h1 {
 }
 
 .item1 {
-  background-image: url(../multimedia/img/cabañaSL\ \(1\).jpg);
+  background-image: url(../multimedia/img/cabañaSL2.jpg);
 }
 
 .item2 {
