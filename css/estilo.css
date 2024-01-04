@@ -122,7 +122,8 @@ h1 {
 
 .slidecar{
   padding: 200px 0 0 0;
-  height: 350px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .icons{
@@ -136,7 +137,7 @@ h1 {
 }
 
 .item1 {
-  background-image: url(../multimedia/img/cabañaSL2.jpg);
+  background-image: url(../multimedia/img/cabañaSL/cabañaSL5.jpg);
 }
 
 .item2 {
@@ -169,6 +170,10 @@ h1 {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
+}
+
+.subir:hover {
+  color: #fff;
 }
 
 .close{
