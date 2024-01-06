@@ -16,7 +16,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'AgencyFB', 'Courier New', Courier, monospace;
 }
 
 html {
@@ -88,10 +88,9 @@ h1 {
   padding: 20px;
   color: #fff;
   text-align: center;
-  font-family: 'AgencyFB';
+  font-family: 'AgencyFB', 'Courier New', Courier, monospace;
   font-weight: normal;
   font-size: 36px;
-  /* text-shadow: 0 0 2px #000000; */
 }
 
 .proyecto {
@@ -109,9 +108,8 @@ h1 {
 .proy{
   padding: 0%;
   text-align: start;
-  font-family: 'AgencyFB';
+  font-family: 'AgencyFB', 'Courier New', Courier, monospace;
   font-weight: normal;
-  /* text-shadow: 0 0 1px #000; */
   font-size: 24px;
 }
 
@@ -121,12 +119,11 @@ h1 {
   font-family: 'arial', Courier, monospace;
   font-weight: normal;
   font-size: 18px;
-  /* text-shadow: 0 0 1px #000; */
 }
 
 .proy3{
   padding: 0%;
-  font-family: 'AgencyFB';
+  font-family: 'AgencyFB', 'Courier New', Courier, monospace;
   font-weight: normal;
 }
 
@@ -162,11 +159,11 @@ h1 {
 }
 
 .item2 {
-  background-image: url(../multimedia/img/img2.jpg);
+  background-image: url(../multimedia/img/ampliacionCL/ampliacionCL7.jpeg);
 }
 
 .item3 {
-  background-image: url(../multimedia/img/img3.jpg);
+  background-image: url(../multimedia/img/casaLG/casaLG6.jpeg);
 }
 
 .item4 {
@@ -218,8 +215,9 @@ h2 {
   padding: 30px;
   color: #fff;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  text-shadow: 0 0 1px #fff;
+  font-family: 'AgencyFB', 'Courier New', Courier, monospace;
+  font-weight: normal;
+
 }
 
 h3 {
@@ -227,6 +225,8 @@ h3 {
   text-align: center;
   color: #fff;
   padding: 100px 0 0 0;
+  font-family: 'AgencyFB', 'Courier New', Courier, monospace;
+  font-weight: normal;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
