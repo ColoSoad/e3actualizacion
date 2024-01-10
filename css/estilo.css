@@ -359,6 +359,16 @@ h3 {
     order: 5;
   }
 
+  .slidcar{
+    height: 650px;
+  }
+  
+  .slidecar{
+    padding: 40px 0 10px 0;
+    height: 600px;
+    object-fit: cover;
+  }
+
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .proyecto {
@@ -430,6 +440,16 @@ h3 {
   .e-left3:hover {
     filter: grayscale(0);
   }
+
+  .slidcar{
+    height: 768px;
+  }
+  
+  .slidecar{
+    padding-top: 50px;
+    height: 718px;
+    object-fit: cover;
+  }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1820px) {
   
@@ -499,5 +519,15 @@ h3 {
   }
   .e-left3:hover {
     filter: grayscale(0);
+  }
+
+  .slidcar{
+    height: 1020px;
+  }
+  
+  .slidecar{
+    padding-top: 25px;
+    height: 1000px;
+    object-fit: cover;
   }
 }
