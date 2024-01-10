@@ -360,13 +360,16 @@ h3 {
   }
 
   .slidcar{
-    height: 650px;
+    object-position:0%;
+    max-width:none;
+    max-height: none;
+    height: 550px;
   }
   
   .slidecar{
-    padding: 40px 0 10px 0;
-    height: 600px;
-    object-fit: cover;
+    padding: 100px 0 0 0;
+    height: 450px;
+    object-fit :cover;
   }
 
 }
@@ -442,13 +445,16 @@ h3 {
   }
 
   .slidcar{
-    height: 768px;
+    object-position:0%;
+    max-width:none;
+    max-height: none;
+    height: 550px;
   }
   
   .slidecar{
-    padding-top: 50px;
-    height: 718px;
-    object-fit: cover;
+    padding: 100px 0 0 0;
+    height: 550px;
+    object-fit :contain;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1820px) {
@@ -522,12 +528,15 @@ h3 {
   }
 
   .slidcar{
-    height: 1020px;
+    object-position:0%;
+    max-width:none;
+    max-height: none;
+    height: 550px;
   }
   
   .slidecar{
-    padding-top: 25px;
-    height: 1000px;
-    object-fit: cover;
+    padding: 150px 0 0 0;
+    height: 550px;
+    object-fit :contain;
   }
 }
