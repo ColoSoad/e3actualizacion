@@ -379,55 +379,55 @@ h3 {
     grid-template-rows: repeat(6, 200px);
   }
 /* orden de los items */
-.item1{
-  order: 0;
-}
-.item2{
-  order: 3;
-}
+  .item1{
+    order: 0;
+  }
+  .item2{
+    order: 3;
+  }
 
-.item3{
-  order: 4;
-}
+  .item3{
+    order: 4;
+  }
 
-.item4{
-  order: 7;
-}
-.item5{
-  order: 8;
-}
+  .item4{
+    order: 7;
+  }
+  .item5{
+    order: 8;
+  }
 
-.item6{
-  order: 12;
-}
+  .item6{
+    order: 12;
+  }
 
-.item7{
-  padding: 25px 0 0 0;
-  order: 1;
-}
-.item8{
-  padding: 25px 0 0 0;
-  order: 2;
-}
+  .item7{
+    padding: 25px 0 0 0;
+    order: 1;
+  }
+  .item8{
+    padding: 25px 0 0 0;
+    order: 2;
+  }
 
-.item9{
-  padding: 25px 0 0 0;
-  order: 5;
-}
+  .item9{
+    padding: 25px 0 0 0;
+    order: 5;
+  }
 
-.item10{
-  padding: 25px 0 0 0;
-  order: 6;
-}
-.item11{
-  padding: 25px 0 0 0;
-  order: 9;
-}
+  .item10{
+    padding: 25px 0 0 0;
+    order: 6;
+  }
+  .item11{
+    padding: 25px 0 0 0;
+    order: 9;
+  }
 
-.item12{
-  padding: 25px 0 0 0;
-  order: 11;
-}
+  .item12{
+    padding: 25px 0 0 0;
+    order: 11;
+  }
   .e-right, .e-left2, .e-right3 {
     padding-top: 85px;
   }
@@ -452,8 +452,8 @@ h3 {
   }
   
   .slidecar{
-    padding: 100px 0 0 0;
-    height: 550px;
+    padding: 50px 0 0 0;
+    height: 500px;
     object-fit :contain;
   }
 }
