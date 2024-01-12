@@ -141,15 +141,21 @@ h1 {
   background-color: #000;
 }
 
+
+/* _______________________________________________________________________________________________________ */
+
+
 .slidcar{
-  height: 350px;
+  height: 770px;
 }
 
 .slidecar{
-  padding: 150px 0 0 0;
-  height: 350px;
+  padding: 110px 0 0 0;
+  height: 520px;
   object-fit: cover;
 }
+
+/* _______________________________________________________________________________________________________ */
 
 .icons{
   padding: 0 0 0 20px;
@@ -452,13 +458,15 @@ h3 {
   }
 
   .slidcar{
-    height: 500px;
+    height: 250px;
+    width: 100%;
   }
   
   .slidecar{
-    padding: 15px 0 0 0;
-    height: 400px;
-    object-fit :cover;
+    padding: 0px 0 20px 0;
+    height: 250px;
+    width: 90%;
+    object-fit :contain;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1820px) {
