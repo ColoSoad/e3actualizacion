@@ -142,13 +142,12 @@ h1 {
 }
 
 .slidcar{
-  height: 650px;
+  height: 350px;
 }
 
 .slidecar{
-  display: flex;
-  align-items: center;
-  height: 400px;
+  padding: 10px 0 0 0;
+  height: 350px;
   object-fit: cover;
 }
 
