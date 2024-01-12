@@ -36,6 +36,16 @@ img {
   height: 35px;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #2A3A47;
+}
+
+main {
+  padding-top: 72px;
+}
+
 .barra {
   background-color: #2A3A47 !important;
 }
@@ -136,8 +146,7 @@ h1 {
 }
 
 .slidecar{
-  padding: 200px 0 0 0;
-  height: 550px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -360,14 +369,10 @@ h3 {
   }
 
   .slidcar{
-    object-position:0%;
-    max-width:none;
-    max-height: none;
-    height: 550px;
+    height: 750px;
   }
   
   .slidecar{
-    padding: 100px 0 0 0;
     height: 450px;
     object-fit :cover;
   }
@@ -445,15 +450,11 @@ h3 {
   }
 
   .slidcar{
-    object-position:0%;
-    max-width:none;
-    max-height: none;
-    height: 550px;
+    height: 850px;
   }
   
   .slidecar{
-    padding: 50px 0 0 0;
-    height: 500px;
+    height: 750px;
     object-fit :contain;
   }
 }
@@ -528,15 +529,11 @@ h3 {
   }
 
   .slidcar{
-    object-position:0%;
-    max-width:none;
-    max-height: none;
-    height: 550px;
+    height: 800px;
   }
   
   .slidecar{
-    padding: 150px 0 0 0;
-    height: 550px;
+    height: 720px;
     object-fit :contain;
   }
 }
