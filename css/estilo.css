@@ -146,7 +146,7 @@ h1 {
 }
 
 .slidecar{
-  padding: 100px 0 0 0;
+  padding: 150px 0 0 0;
   height: 350px;
   object-fit: cover;
 }
@@ -370,12 +370,13 @@ h3 {
   }
 
   .slidcar{
-    height: 750px;
+    height: 450px;
   }
   
   .slidecar{
-    height: 450px;
-    object-fit :cover;
+    padding: 0%;
+    height: 345px;
+    object-fit :contain;
   }
 
 }
@@ -451,12 +452,13 @@ h3 {
   }
 
   .slidcar{
-    height: 850px;
+    height: 500px;
   }
   
   .slidecar{
-    height: 750px;
-    object-fit :contain;
+    padding: 15px 0 0 0;
+    height: 400px;
+    object-fit :cover;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1820px) {
@@ -530,11 +532,12 @@ h3 {
   }
 
   .slidcar{
-    height: 800px;
+    height: 620px;
   }
   
   .slidecar{
-    height: 720px;
+    padding: 0%;
+    height: 620px;
     object-fit :contain;
   }
 }
