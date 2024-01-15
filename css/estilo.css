@@ -183,11 +183,11 @@ h1 {
 }
 
 .item4 {
-  background-image: url(../multimedia/img/img4.jpg);
+  background-image: url(../multimedia/img/casaKG/casaKG7.jpg);
 }
 
 .item5 {
-  background-image: url(../multimedia/img/img5.jpg);
+  background-image: url(../multimedia/img/Baños/baños7c.jpeg);
 }
 
 .item6 {
@@ -458,13 +458,13 @@ h3 {
   }
 
   .slidcar{
-    height: 250px;
+    height: 450px;
     width: 100%;
   }
   
   .slidecar{
     padding: 0px 0 20px 0;
-    height: 250px;
+    height: 400px;
     width: 90%;
     object-fit :contain;
   }
