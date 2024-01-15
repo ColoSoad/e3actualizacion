@@ -458,13 +458,13 @@ h3 {
   }
 
   .slidcar{
-    height: 450px;
+    height: 250px;
     width: 100%;
   }
   
   .slidecar{
     padding: 0px 0 20px 0;
-    height: 400px;
+    height: 250px;
     width: 90%;
     object-fit :contain;
   }
