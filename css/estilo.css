@@ -106,7 +106,7 @@ h1 {
 .proyecto {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 200px);
+  grid-template-rows: repeat(18, 200px);
   padding: 30px;
   gap: 20px;
 }
@@ -191,6 +191,18 @@ h1 {
 
 .item6 {
   background-image: url(../multimedia/img/casaJG/casaJG6.jpg);
+}
+
+.item7 {
+  background-image: url(../multimedia/img/ampliacionMR/ampliacionMR9.jpg);
+}
+
+.item8 {
+  background-image: url(../multimedia/img/ampliacionMR/ampliacionMR9.jpg);
+}
+
+.item9 {
+  background-image: url(../multimedia/img/ampliacionMR/ampliacionMR9.jpg);
 }
 
 .subir {
@@ -300,7 +312,7 @@ h3 {
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .proyecto {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(9, 200px);
   }
 /* orden de los items */
   .item1{
@@ -326,31 +338,58 @@ h3 {
   }
 
   .item7{
-    padding: 25px 0 0 0;
-    order: 1;
+    order: 13;
   }
   .item8{
-    padding: 25px 0 0 0;
-    order: 2;
+    order: 16;
   }
 
   .item9{
-    padding: 25px 0 0 0;
-    order: 5;
+    order: 17;
   }
 
   .item10{
     padding: 25px 0 0 0;
-    order: 6;
+    order: 1;
   }
   .item11{
     padding: 25px 0 0 0;
-    order: 9;
+    order: 2;
   }
 
   .item12{
     padding: 25px 0 0 0;
-    order: 11;
+    order: 5;
+  }
+
+  .item13{
+    padding: 25px 0 0 0;
+    order: 6;
+  }
+
+  .item14{
+    padding: 25px 0 0 0;
+    order: 9;
+  }
+
+  .item15{
+    padding: 25px 0 0 0;
+    order: 10;
+  }
+
+  .item16{
+    padding: 25px 0 0 0;
+    order: 13;
+  }
+
+  .item17{
+    padding: 25px 0 0 0;
+    order: 14;
+  }
+
+  .item18{
+    padding: 25px 0 0 0;
+    order: 17;
   }
 
 /* fin orden de los items */
