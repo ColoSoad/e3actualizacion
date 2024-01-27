@@ -198,11 +198,11 @@ h1 {
 }
 
 .item8 {
-  background-image: url(../multimedia/img/ampliacionMR/ampliacionMR9.jpg);
+  background-image: url(../multimedia/img/casaJF/casaJF7.jpg);
 }
 
 .item9 {
-  background-image: url(../multimedia/img/ampliacionMR/ampliacionMR9.jpg);
+  background-image: url(../multimedia/img/casaSL/casaSL5.jpg);
 }
 
 .subir {
@@ -368,7 +368,7 @@ h3 {
   }
 
   .item14{
-    padding: 25px 0 0 0;
+    padding: 4px 0 0 0;
     order: 9;
   }
 
@@ -427,14 +427,14 @@ h3 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .proyecto {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(9, 200px);
   }
 /* orden de los items */
   .item1{
     order: 0;
   }
   .item2{
-    order: 3;
+    order: 1;
   }
 
   .item3{
@@ -442,43 +442,74 @@ h3 {
   }
 
   .item4{
-    order: 7;
+    order: 5;
   }
   .item5{
     order: 8;
   }
 
   .item6{
-    order: 12;
+    order: 9;
   }
 
   .item7{
     padding: 25px 0 0 0;
-    order: 1;
+    order: 12;
   }
   .item8{
     padding: 25px 0 0 0;
-    order: 2;
+    order: 13;
   }
 
   .item9{
     padding: 25px 0 0 0;
-    order: 5;
+    order: 16;
   }
 
   .item10{
     padding: 25px 0 0 0;
-    order: 6;
+    order: 2;
   }
   .item11{
     padding: 25px 0 0 0;
-    order: 9;
+    order: 3;
   }
 
   .item12{
     padding: 25px 0 0 0;
+    order: 6;
+  }
+
+  .item13{
+    padding: 25px 0 0 0;
+    order: 7;
+  }
+
+  .item14{
+    padding: 25px 0 0 0;
+    order: 10;
+  }
+
+  .item15{
+    padding: 25px 0 0 0;
     order: 11;
   }
+
+  .item16{
+    padding: 25px 0 0 0;
+    order: 14;
+  }
+
+  .item17{
+    padding: 25px 0 0 0;
+    order: 15;
+  }
+
+  .item18{
+    padding: 25px 0 0 0;
+    order: 18;
+  }
+
   .e-right, .e-left2, .e-right3 {
     padding-top: 85px;
   }
@@ -496,14 +527,15 @@ h3 {
   }
 
   .slidcar{
-    height: 250px;
+    height: 390px;
     width: 100%;
   }
   
   .slidecar{
-    padding: 0px 0 20px 0;
-    height: 250px;
-    width: 90%;
+    padding: 0px 0 0px 0;
+    margin: 10px;
+    height: 390px;
+    width: 100%;
     object-fit :contain;
   }
 }
@@ -512,7 +544,7 @@ h3 {
   
   .proyecto {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 275px 150px 275px 150px;
+    grid-template-rows: 275px 150px 275px 150px 275px 150px;
   }
 
   /* Orden de los items */
@@ -539,25 +571,49 @@ h3 {
   }
   
   .item7{
-    order: 3;
+    order: 12;
   }
   .item8{
-    order: 4;
+    order: 13;
   }
   
   .item9{
-    order: 5;
+    order: 14;
   }
   
   .item10{
-    order: 9;
+    order: 3;
   }
   .item11{
-    order: 10;
+    order: 4;
   }
   
   .item12{
+    order: 5;
+  }
+
+  .item13{
+    order: 9;
+  }
+
+  .item14{
+    order: 10;
+  }
+
+  .item15{
     order: 11;
+  }
+
+  .item16{
+    order: 15;
+  }
+
+  .item17{
+    order: 16;
+  }
+
+  .item18{
+    order: 17;
   }
 /* Fin orden de los items */
   
