@@ -42,8 +42,18 @@ header {
   background-color: #2A3A47;
 }
 
+.headerIndex {
+  position: static;
+  width: 100%;
+  background-color: #2A3A47;
+}
+
 main {
-  padding-top: 72px;
+  padding-top: 15px;
+}
+
+.mainProyecto{
+  padding-top: 75px;
 }
 
 .barra {
@@ -52,13 +62,6 @@ main {
 
 .padd {
   padding: 30px 0 0 0;
-}
-
-.inicio {
-  height: 650px;
-  background-image: url(../multimedia/img/logo.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .inicio2 {
@@ -131,10 +134,37 @@ h1 {
   font-size: 18px;
 }
 
-.proy3{
-  padding: 0%;
+.slogan{
+  font-size: 25px;
+  color: grey;
+  text-align: center;
+  padding: 0px 0 0 0;
   font-family: 'AgencyFB', 'Courier New', Courier, monospace;
   font-weight: normal;
+}
+
+.sloganIndex{
+  height: 80px;
+}
+
+.logoIndex{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 230px 340px;
+  padding: 30px;
+  grid-gap: 20px;
+}
+
+.logoFIjo{
+  background-image: url(../multimedia/img/logo3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.logoSliders{
+  height: 340px;
+  object-fit: cover;
+  
 }
 
 .slidd{
