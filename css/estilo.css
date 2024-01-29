@@ -64,27 +64,6 @@ main {
   padding: 30px 0 0 0;
 }
 
-.inicio2 {
-  height: 650px;
-  background-image: url(../multimedia/img/carousel1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.inicio3 {
-  height: 650px;
-  background-image: url(../multimedia/img/carousel2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.inicio4 {
-  height: 650px;
-  background-image: url(../multimedia/img/carousel3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 footer {
   text-align: center;
   color: grey;
@@ -173,9 +152,6 @@ h1 {
   background-color: #000;
 }
 
-
-/* _______________________________________________________________________________________________________ */
-
 .slidcar{
   height: 770px;
 }
@@ -185,8 +161,6 @@ h1 {
   height: 520px;
   object-fit: cover;
 }
-
-/* _______________________________________________________________________________________________________ */
 
 .icons{
   padding: 0 0 0 20px;
@@ -286,6 +260,21 @@ h3 {
   padding: 100px 0 0 0;
   font-family: 'AgencyFB', 'Courier New', Courier, monospace;
   font-weight: normal;
+}
+
+video {
+  height: 570px;
+  width: 320px;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.izq, .centro, .der {
+  padding: 30px;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
@@ -457,6 +446,47 @@ h3 {
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .inicioMain{
+    height: 700px;
+  }
+
+  .logoIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    padding: 40px 20px 0 0;
+    grid-gap: 15x;
+  }
+  
+  .logoFIjo{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 600px;
+    padding: 0 0 0px 0;
+    background-image: url(../multimedia/img/logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .logoSliders1{
+    padding: 0 0 0px 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 300px;
+    object-fit: cover;
+    
+  }
+
+  .logoSliders2{
+    padding: 0 0 0px 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 300px;
+    object-fit: cover;
+    
+  }
+
   .proyecto {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(9, 200px);
@@ -570,10 +600,71 @@ h3 {
     width: 100%;
     object-fit :contain;
   }
+
+
 }
-@media only screen and (min-width: 1025px) and (max-width: 1820px) {
+@media only screen and (min-width: 1025px) and (max-width: 2820px) {
   
+  .barra {
+    font-size: 28px;
+  }
+  .icons{
+    padding: 0 0 0 20px;
+    height: 30px;
+  }
+
+  .slogan {
+    font-size: 38px;
+  }
+
+  .inicioMain{
+    height: 800px;
+  }
+
+  .logoIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    padding: 80px 110px 0 0;
+    grid-gap: 15x;
+  }
   
+  .logoFIjo{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 600px;
+    padding: 0 0 0 0;
+    background-image: url(../multimedia/img/logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .logoSliders1{
+    padding: 0 0 0px 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 300px;
+    object-fit: contain;
+    
+  }
+
+  .logoSliders2{
+    padding: 0 0 0px 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 300px;
+    object-fit: contain;
+    
+  }
+
+  .proy3{
+    font-size: 30px;
+  }
+  
+  .proy4{
+    font-size: 20px;
+  }
+
   .proyecto {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 275px 150px 275px 150px 275px 150px;
