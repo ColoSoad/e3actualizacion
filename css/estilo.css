@@ -54,6 +54,68 @@ main {
     background-color: #2a3a47 !important;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.nav {
+    font-family: 'Titillium Web' !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav * {
+    transition: all 0.35s ease;
+}
+
+.nav-li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1em;
+    padding: 0;
+}
+
+.nav-a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-a::before,
+.nav-a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+.nav-a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid grey;
+    border-right: 3px solid #676767;
+    transform: translate(-100%, 50%);
+}
+
+.nav-a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #676767;
+    border-left: 3px solid grey;
+    transform: translate(100%, -50%);
+}
+
+.nav-a:hover:before,
+.nav-a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
 .padd {
     padding: 30px 0 0 0;
 }
