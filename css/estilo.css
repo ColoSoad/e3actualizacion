@@ -12,6 +12,8 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -28,6 +30,7 @@ body {
 }
 
 .grad {
+    padding: 50px;
     color: grey;
     background: linear-gradient(#2a3a47, #000, #000, #2a3a47);
 }
@@ -53,8 +56,6 @@ main {
 .barra {
     background-color: #2a3a47 !important;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 
 .nav {
     font-family: 'Titillium Web' !important;
@@ -442,7 +443,24 @@ ul li a .icon {
     color: grey;
 }
 /* ---------------------------------------------------------------------- */
-
+.row {
+    justify-content: center;
+}
+.areatext {
+    padding: 30px 0 0 0;
+}
+h2 {
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 1px #fff;
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0 0 0;
+}
 @media only screen and (min-width: 300px) and (max-width: 479px) {
     .padd {
         padding: 15px 0 0 0;
