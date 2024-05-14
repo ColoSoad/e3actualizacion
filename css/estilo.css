@@ -461,6 +461,7 @@ h3 {
     color: #fff;
     padding: 100px 0 0 0;
 }
+
 @media only screen and (min-width: 300px) and (max-width: 479px) {
     .padd {
         padding: 15px 0 0 0;
