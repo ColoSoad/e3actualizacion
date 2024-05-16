@@ -57,6 +57,11 @@ main {
     background-color: #2a3a47 !important;
 }
 
+.icons:hover {
+    transition: all 0.65s;
+    transform: rotateY(360deg);
+}
+
 .nav {
     font-family: 'Titillium Web' !important;
     text-transform: uppercase;
@@ -128,6 +133,8 @@ h1 {
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
     font-weight: normal;
     font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .proyecto {
@@ -165,6 +172,7 @@ h1 {
     padding: 5px 0 0 0;
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 .sloganIndex {
@@ -306,6 +314,7 @@ h3 {
     padding: 100px 0 0 0;
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 video {
@@ -454,12 +463,140 @@ h2 {
     color: #fff;
     text-align: center;
     text-shadow: 0 0 1px #fff;
+    text-transform: uppercase;
 }
+
 h3 {
     font-size: 20px;
     text-align: center;
     color: #fff;
     padding: 100px 0 0 0;
+    text-transform: uppercase;
+}
+
+.tarjetas {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10%;
+    border: none;
+}
+
+.face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+
+.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(200px);
+    background-image: url(../multimedia/img/Ariel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 25% 0%;
+}
+
+.face3 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(200px);
+    background-image: url(../multimedia/img/Ariel2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 25% 0%;
+}
+
+.container .card:hover .face.face1 {
+    transform: translateY(0);
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.tituloTarjeta {
+    margin: 10px 0 0;
+    padding: 0 0 35px 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.matricula {
+    margin: 10px 0 0;
+    padding: 0 0 35px 35px;
+    color: #0b0b0b;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    width: 300px;
+    height: 300px;
+    border-radius: 25% 0;
+}
+
+.container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content .descriptionTarjeta {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
