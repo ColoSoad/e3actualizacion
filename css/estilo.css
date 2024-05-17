@@ -369,8 +369,6 @@ video {
 .centro,
 .der,
 .slide,
-.face2,
-.face3,
 .formula {
     view-timeline-name: --items;
     view-timeline-axis: block;
@@ -380,7 +378,6 @@ video {
     animation-fill-mode: both;
 }
 
-/* ---------------------------------------------------------------------- */
 .iconos-ul {
     display: flex;
     position: static;
@@ -455,7 +452,7 @@ ul li a .icon {
     text-align: center;
     color: grey;
 }
-/* ---------------------------------------------------------------------- */
+
 .row {
     justify-content: center;
 }
@@ -495,7 +492,6 @@ h3 {
 }
 
 .card {
-    margin-bottom: 25px;
     position: relative;
     cursor: pointer;
     background-color: transparent;
@@ -946,10 +942,20 @@ h3 {
         object-fit: contain;
     }
 
-    .card {
-        padding-right: 100px;
+    .card1 {
+        margin: 0 50px 0 0;
+        transform: translateY(-70px);
     }
 
+    .card2 {
+        margin: 0 0 0 0px;
+        transform: translateY(35px);
+    }
+
+    .h1contact {
+        margin: 0%;
+        padding-bottom: 70px;
+    }
     /* ------------------------------------------------------------------------------------------------------------------------------------ */
 }
 @media only screen and (min-width: 1025px) and (max-width: 2820px) {
@@ -1118,5 +1124,20 @@ h3 {
         padding: 0%;
         height: 620px;
         object-fit: contain;
+    }
+
+    .card1 {
+        margin: 0 50px 0 0;
+        transform: translateY(-70px);
+    }
+
+    .card2 {
+        margin: 0 0 0 0px;
+        transform: translateY(35px);
+    }
+
+    .h1contact {
+        margin: 0%;
+        padding-bottom: 70px;
     }
 }

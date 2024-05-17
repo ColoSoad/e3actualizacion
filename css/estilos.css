@@ -15,10 +15,9 @@
 }
 
 .card {
-    margin-bottom: 25px;
     position: relative;
     cursor: pointer;
-    background-color: #2a3a47;
+    background-color: transparent;
     border-radius: 10%;
     border: none;
 }
@@ -46,7 +45,24 @@
     width: 300px;
     height: 300px;
     border-radius: 25% 0%;
-    border-radius: 50%;
+}
+
+.face3 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(200px);
+    background-image: url(../multimedia/img/Ariel2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 25% 0%;
 }
 
 .container .card:hover .face.face1 {
@@ -57,12 +73,24 @@
     opacity: 1;
 }
 
-.container .card .face.face1 .content .tituloTarjeta {
-    margin: 10px 0 0;
-    padding: 0;
+.tituloTarjeta {
+    transform: translateY(70%);
     color: #fff;
     text-align: center;
     font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.matricula {
+    transform: translateY(20%);
+    color: #0b0b0b;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 .container .card .face.face2 {
@@ -78,29 +106,15 @@
     width: 300px;
     height: 300px;
     border-radius: 25% 0;
-    border-radius: 50%;
+}
+
+.container .card .face.face2 .content .descriptionTarjeta {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
 }
 
 .container .card:hover .face.face2 {
-    transform: translateY(0);
-}
-
-.container .card .face.face2 .content .parrafoTarjeta {
-    margin: 0;
-    padding: 0;
-}
-
-.container .card .face.face2 .content a {
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
-}
-
-.container .card .face.face2 .content a:hover {
-    background: #333;
-    color: #fff;
+    transform: translateY(5);
+    border-radius: 0% 0 25% 0;
 }
