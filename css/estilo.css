@@ -278,6 +278,21 @@ h1 {
     line-height: 40px;
     border-radius: 50%;
 }
+.whatsapp {
+    color: #4bec67;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 40px;
+}
+.whatsapp:hover {
+    color: #fff;
+}
 
 .subir:hover {
     color: #fff;
