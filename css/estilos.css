@@ -6,6 +6,9 @@
     align-items: center;
 }
 
+body {
+    background-color: #2a3a47;
+}
 .container {
     width: 1000px;
     position: relative;
@@ -120,3 +123,97 @@
 }
 
 /* ESTILOS DEL INPUT LENGUAJES */
+
+/* ESTILOS PARA miFooter */
+.miFooter {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.copyrights {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #898a8b;
+}
+.copyrights2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: #64676c;
+}
+.contenedorFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+.contenedorFooter .boton {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: #d6d7da;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.contenedorFooter .boton:hover {
+    width: 200px;
+    background-color: #d6d7da;
+}
+.contenedorFooter .boton .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+.Instagram {
+    box-shadow: 0 0 0px #c058dd, 0 0 50px #f33095, 0 0 0px #8b5cf6, 0 0 0px #8b5cf6;
+}
+.spanInstagram {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #e74f31, #d41356, #3040e6);
+    font-weight: 900;
+}
+.LinkedIn,
+.FaceBook {
+    box-shadow: 0 0 0px #5f89ae, 0 0 50px #5f89ae, 0 0 0px #5f89ae, 0 0 0px #5f89ae;
+}
+.contenedorFooter .boton i {
+    font-size: 25px;
+    line-height: 60px;
+}
+.contenedorFooter .boton span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 14px;
+    letter-spacing: 3px;
+}
+
+.contenedorFooter .boton:nth-child(1):hover .icono {
+    background: #306cb2;
+    color: #fff;
+}
+.contenedorFooter .boton:nth-child(1):hover span {
+    color: #306cb2;
+}
+.contenedorFooter .boton:nth-child(2):hover .icono {
+    background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce3d);
+    color: #fff;
+}
+.contenedorFooter .boton:nth-child(3):hover .icono {
+    background: #306cb2;
+    color: #fff;
+}
+
+/* ////////////////////////////// */
