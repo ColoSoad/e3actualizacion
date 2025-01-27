@@ -41,29 +41,29 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img class="icons" src="./multimedia/img/icons.png"
                         alt="icono del sitio de arquitectura" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler btnNavs" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav nav">
                         <li class="nav-item nav-li">
-                            <a class="nav-link nav-a" href="./pages/proyecto.html">Proyectos</a>
+                            <a class="nav-link nav-a" id="proyecto-nav" href="./pages/proyecto.html">Proyectos</a>
                         </li>
                         <li class="nav-item nav-li">
-                            <a href="#" class="nav-link nav-a">Estudio</a>
+                            <a id="estudio-nav" href="#" id="estudio-nav" class="nav-link nav-a">Estudio</a>
                         </li>
                         <li class="nav-item nav-li">
-                            <a href="./pages/servicio.html" class="nav-link nav-a">Servicios</a>
+                            <a id="servicio-nav" href="./pages/servicio.html" class="nav-link nav-a">Servicios</a>
                         </li>
                         <li class="nav-item nav-li">
-                            <a href="./pages/contacto.html" class="nav-link nav-a">Contacto</a>
+                            <a id="contacto-nav" href="./pages/contacto.html" class="nav-link nav-a">Contacto</a>
                         </li>
-                        <li class="nav-item nav-li">
+                        <!-- <li class="nav-item nav-li">
                             <a href="./pages/prueba.html" class="nav-link nav-a">Prueba</a>
-                        </li>
-                        <input type="checkbox" hidden id="lenguaje" class="input-languaje" />
-                        <label for="lenguaje" id="label_languaje" class="label-languaje"><span class="spanish">ES</span> / <span class="english">EN</span>  
+                        </li> -->
+                        <input type="checkbox" id="lenguaje" class="input-languaje" hidden/>
+                        <label for="lenguaje" id="label_languaje" class="label-languaje"><span class="mundi"><i class="fa-solid fa-globe"></i></span><span class="separadorSpan">/</span><span class="spanEspañol" disabled >ESPAÑOL</span>  
                         </label>
                         
                     </ul>
@@ -75,10 +75,15 @@
         <!-- Barra de navegacion fin -->
     </header>
     <main class="inicioMain">
-        <div class="sloganIndex">
+        <!-- <div class="sloganIndex">
             <p class="slogan">
-                La casa de tus sueños te está llamando...
+                Diseñamos tus sueños, construimos tu realidad.
             </p>
+        </div> -->
+        <div class="sloganIndex">
+            <span id="sloganPrincipal" class="slogan">
+                Diseñamos tus sueños, construimos tu realidad.
+            </span>
         </div>
         <div class="logoIndex">
             <div class="logoFIjo"></div>

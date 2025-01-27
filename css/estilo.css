@@ -58,9 +58,15 @@ main {
     background-color: #2a3a47 !important;
 }
 
-.icons:hover {
+/* .icons:hover {
     transition: all 0.65s;
     transform: rotateY(360deg);
+} */
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
 }
 
 .nav {
@@ -166,20 +172,25 @@ h1 {
     font-size: 18px;
 }
 
-.slogan {
-    font-size: 25px;
-    color: grey;
-    text-align: center;
-    padding: 5px;
-    font-family: 'AgencyFB', 'Courier New', Courier, monospace;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
 .sloganIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 25px;
     padding-top: 25px;
     height: 80px;
+}
+
+.slogan {
+    font-size: 25px;
+    /* color: rgb(162, 160, 160); */
+    padding: 5px;
+    text-transform: uppercase;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(162, 160, 160), rgb(104, 103, 103), rgb(162, 160, 160), rgb(104, 103, 103));
+    letter-spacing: 0.1em;
 }
 
 .logoIndex {
@@ -703,6 +714,17 @@ h3 {
     color: #fff;
 }
 
+.mundi,
+.spanEspañol {
+    color: #808080;
+    font-size: 16px;
+    text-shadow: #0b0b0b;
+}
+
+.separadorSpan {
+    color: #000;
+    margin: 0 10px 0 10px;
+}
 /* ////////////////////////////// */
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
@@ -883,7 +905,7 @@ h3 {
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
     .label-languaje {
         position: absolute;
-        top: 5px;
+        top: 30px;
         right: 25px;
     }
     .slogan {
@@ -1075,8 +1097,8 @@ h3 {
 @media only screen and (min-width: 1025px) and (max-width: 2820px) {
     .label-languaje {
         position: absolute;
-        top: 5px;
-        right: 25px;
+        top: 30px;
+        right: 30px;
     }
     .sloganIndex {
         padding-top: 75px;

@@ -1,0 +1,36 @@
+[
+    {
+        "index": {
+            "liNavProyecto": "PROJECTS",
+            "liNavEstudio": "STUDIO",
+            "liNavServicio": "SERVICE",
+            "liNavContacto": "ABOUT US",
+            "sloganPrincipal": "We design your dreams, we build your reality.",
+            "footer": "All rights reserved"
+        },
+        "contacto": {
+            "tituloPrincipalContacto": "EXAMPLES OF PSEUDO-CLASSES",
+            "buttonClick": "Click Here!",
+            "inputClick": "Name",
+            "seleccionarArchivo": "Select File",
+            "inputNombre": "Name",
+            "inputCorreo": "email",
+            "inputContraseña": "Password",
+            "buttonIngresar": "LOGIN"
+        },
+        "responsivo": {
+            "tituloPrincipalDiseño": "Responsive Design",
+            "h2Responsive": "Learn responsive with TailwindCss",
+            "pResponsive": "In this section of the page, we will learn responsive design with TailwindCSS",
+            "wallBasis": "Wall using the 'BASIS' class",
+            "collageBasis": "Collage using the 'BASIS' class",
+            "layoutGrid": "HTML layout with 'GRID'",
+            "collageGrid": "Collage with 'GRID' (col/row span)"
+        },
+        "navbars": {
+            "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS",
+            "nav1": "NAVBAR 1",
+            "nav2": "NAVBAR 2"
+        }
+    }
+]
