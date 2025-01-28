@@ -1,6 +1,8 @@
 const facebook = document.querySelector('#icon-facebook');
 const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
+const openModal = document.querySelector('#btnOpenModal');
+const closeModal = document.querySelector('#btnCloseModal');
 //ENLACE AL DOM LENGUAJE
 const proyectoNav = document.querySelector('#proyecto-nav');
 const estudioNav = document.querySelector('#estudio-nav');
@@ -86,6 +88,13 @@ facebook.addEventListener('click', (e) => {
 
 instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
+});
+
+openModal.addEventListener('click', (e) => {
+    modal.showModal();
+});
+closeModal.addEventListener('click', () => {
+    modal.close();
 });
 
 recuperarInfoDePreferences();

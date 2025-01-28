@@ -217,17 +217,54 @@ h1 {
     object-fit: cover;
 }
 
-.slidd {
+/* .slidd {
     background-color: #000;
+} */
+
+/* .slidcar {
+    height: 770px;
+} */
+
+#modal {
+    height: 37%;
+    width: 100%;
+    opacity: 1;
+}
+dialog {
+    border: none; /* Elimina el borde por defecto */
+    outline: none; /* Elimina cualquier contorno adicional */
+    margin: auto;
+}
+#modal::backdrop {
+    backdrop-filter: blur(5px);
+    background-color: #fdf7f700;
+    height: 100%;
+}
+.carousel-indicators {
+    bottom: -10px;
 }
 
-.slidcar {
-    height: 770px;
+.close {
+    height: 60px;
+    width: 60px;
+    color: rgb(33, 32, 32);
+    position: fixed;
+    left: 5px;
+    top: 130px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
 }
 
 .slidecar {
-    padding: 110px 0 0 0;
-    height: 520px;
+    /* padding: 110px 0 0 0; */
+    height: auto;
     object-fit: cover;
 }
 
@@ -309,23 +346,6 @@ h1 {
 
 .subir:hover {
     color: #fff;
-}
-
-.close {
-    height: 60px;
-    width: 60px;
-    color: grey;
-    position: fixed;
-    right: 5px;
-    top: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 27px;
-}
-
-.close:hover {
-    color: grey;
-    font-size: 32px;
 }
 
 h2 {
@@ -594,6 +614,7 @@ h3 {
     font-size: 1.5em;
     font-weight: 100;
     letter-spacing: 0.2rem;
+    padding: 5px;
 }
 
 .matricula {
@@ -915,10 +936,10 @@ h3 {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-    .slide {
+    /* .slide {
         width: 75%;
         margin: 0 auto;
-    }
+    } */
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
