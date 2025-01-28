@@ -822,6 +822,10 @@ h3 {
     }
 }
 @media only screen and (min-width: 479px) and (max-width: 768px) {
+    .slidecar {
+        width: 100%;
+        height: auto;
+    }
     .proyecto {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(9, 200px);
@@ -956,6 +960,12 @@ h3 {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    #modal {
+        width: 768px;
+        padding: 0;
+        opacity: 1;
+    }
+
     .label-languaje {
         position: absolute;
         top: 30px;
@@ -1148,6 +1158,11 @@ h3 {
     /* ------------------------------------------------------------------------------------------------------------------------------------ */
 }
 @media only screen and (min-width: 1025px) and (max-width: 2820px) {
+    #modal {
+        width: 908px;
+        padding: 0;
+        opacity: 1;
+    }
     .label-languaje {
         position: absolute;
         top: 30px;
