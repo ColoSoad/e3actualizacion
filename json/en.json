@@ -1,24 +1,26 @@
 [
     {
-        "index": {
+        "navbar": {
             "liNavProyecto": "PROJECTS",
             "liNavEstudio": "STUDIO",
-            "liNavServicio": "SERVICE",
+            "liNavServicio": "SERVICES",
             "liNavContacto": "ABOUT US",
-            "sloganPrincipal": "We design your dreams, we build your reality.",
             "footer": "All rights reserved"
         },
-        "contacto": {
-            "tituloPrincipalContacto": "EXAMPLES OF PSEUDO-CLASSES",
-            "buttonClick": "Click Here!",
-            "inputClick": "Name",
-            "seleccionarArchivo": "Select File",
-            "inputNombre": "Name",
-            "inputCorreo": "email",
-            "inputContraseña": "Password",
-            "buttonIngresar": "LOGIN"
+        "footers": {
+            "footer": "All rights reserved"
         },
-        "responsivo": {
+        "index": {
+            "sloganPrincipal": "We design your dreams, we build your reality."
+        },
+        "projects": {
+            "tituloPrincipal": "PROJECTS",
+            "ubicacion": "Location: ",
+            "superficie": "Area: ",
+            "año": "Year: ",
+            "baño": "Bathroom 1 (4.5m) | Bathroom 2 (5m)"
+        },
+        "studio": {
             "tituloPrincipalDiseño": "Responsive Design",
             "h2Responsive": "Learn responsive with TailwindCss",
             "pResponsive": "In this section of the page, we will learn responsive design with TailwindCSS",
@@ -26,6 +28,15 @@
             "collageBasis": "Collage using the 'BASIS' class",
             "layoutGrid": "HTML layout with 'GRID'",
             "collageGrid": "Collage with 'GRID' (col/row span)"
+        },
+        "service": {
+            "tituloPrincipal": "OUR SERVICES",
+            "parrafoPrincipal": "Our services are designed to meet your needs."
+        },
+        "aboutUs": {
+            "tituloPrincipal": "ABOUT US",
+            "consulta": "INQUIRIES",
+            "siguenos": "SOCIALS"
         },
         "navbars": {
             "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS",

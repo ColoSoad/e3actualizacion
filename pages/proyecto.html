@@ -15,7 +15,7 @@
     </script>
     <!-- BS js v 5.1 fin -->
     <!-- js local inicia -->
-    <script defer src="../js/index.js"></script>
+    <script defer src="../js/proyecto.js"></script>
     <!-- js local fin -->
     <!-- font-awesome incia-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -41,20 +41,20 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav nav">
                         <li class="nav-item nav-li">
-                            <a class="nav-link nav-a" href="./proyecto.html">Proyectos</a>
+                            <a class="nav-link nav-a" id="proyecto-nav" href="./proyecto.html">Proyectos</a>
                         </li>
                         <li class="nav-item nav-li">
-                            <a href="#" class="nav-link nav-a">Estudio</a>
+                            <a href="#" class="nav-link nav-a" id="estudio-nav" >Estudio</a>
                         </li>
                         <li class="nav-item nav-li">
-                            <a href="./servicio.html" class="nav-link nav-a">Servicios</a>
+                            <a id="servicio-nav" href="./servicio.html" class="nav-link nav-a">Servicios</a>
                         </li>
                         <li class="nav-item nav-li">
-                            <a href="./contacto.html" class="nav-link nav-a">Contacto</a>
+                            <a id="contacto-nav" href="./contacto.html" class="nav-link nav-a">Contacto</a>
                         </li>
-                        <li class="nav-item nav-li">
+                        <!-- <li class="nav-item nav-li">
                             <a href="./prueba.html" class="nav-link nav-a">Prueba</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -62,62 +62,62 @@
     </header>
     <!-- Barra de navegacion fin -->
     <main class="mainProyecto">
-        <h1>PROYECTOS</h1>
+        <h1 id="tituloPrincipal">PROYECTOS</h1>
           <!-- Grid inicia -->
         <div class="proyecto grad">
-            <a href="./cabañaSL.html" class="item item1"></a>
+            <a href="#" class="item item1"></a>
             <div class="item10 itemLore">
                 <h2 class="proy">
                     CABAÑAS SL
                 </h2>
-                <p class="proy2">Ubicación: Luján, Mendoza, Argentina.</p>
-                <p class="proy2">Superficie: 227m2</p>
-                <p class="proy2">Año: 2022</p>   
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Luján, Mendoza, Argentina.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>227m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2022</p>   
             </div>
             <a href="./ampliacionCL.html" class="item item2"></a>
             <div class="item11 itemLore">
                 <h2 class="proy">
                     AMPLIACION CL
                 </h2>
-                <p class="proy2">Ubicación: Luján, Mendoza, Argentina.</p>
-                <p class="proy2">Superficie: 52m2</p>
-                <p class="proy2">Año: 2022</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Luján, Mendoza, Argentina.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>52m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2022</p> 
             </div>
             <a href="./casaLG.html" class="item item3"></a>
             <div class="item12 itemLore">
                 <h2 class="proy">
                     CASA LG
                 </h2>
-                <p class="proy2">Ubicación: Luján, Mendoza, Argentina.</p>
-                <p class="proy2">Superficie: 95 m2</p>
-                <p class="proy2">Año: 2023</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Luján, Mendoza, Argentina.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>95 m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2023</p> 
             </div>
             <a href="./casaKG.html" class="item item4"></a>
             <div class="item13 itemLore">
                 <h2 class="proy">
                     CASA KG
                 </h2>
-                <p class="proy2">Ubicación: Guaymallén, Mendoza.</p>
-                <p class="proy2">Superficie: 210m2</p>
-                <p class="proy2">Año: 2023</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Guaymallén, Mendoza.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>210m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2023</p> 
             </div>
             <a href="./baños.html" class="item item5"></a>
             <div class="item14 itemLore">
                 <h2 class="proy">
                     REMODELACIÓN BAÑOS
                 </h2>
-                <p class="proy2">Ubicación: San Martín, Mendoza.</p>
-                <p class="proy2">Superficie: Baño 1 (4.5m) | Baño 2 (5m)</p>
-                <p class="proy2">Año: 2023</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>San Martín, Mendoza.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span><span class="proy2" id="baño">Baño 1 (4.5m) | Baño 2 (5m)</span></p>
+                <p class="proy2"><span class="año proy2">Año: </span>2023</p> 
             </div>
             <a href="./casaJG.html" class="item item6"></a>
             <div class="item15 itemLore">
                 <h2 class="proy">
                     CASA JG
                 </h2>
-                <p class="proy2">Ubicación: Maipú, Mendoza.</p>
-                <p class="proy2">Superficie: 90m2</p>
-                <p class="proy2">Año: 2022</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Maipú, Mendoza.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>90m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2022</p> 
             </div>
             <!-- --------------------------------------------------------------- -->
             <a href="./ampliacionMR.html" class="item item7"></a>
@@ -125,27 +125,27 @@
                 <h2 class="proy">
                     AMPLIACION MR
                 </h2>
-                <p class="proy2">Ubicación: San Martín, Mendoza.</p>
-                <p class="proy2">Superficie: 49m2</p>
-                <p class="proy2">Año: 2022</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>San Martín, Mendoza.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>49m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2022</p> 
             </div>
             <a href="./casaJF.html" class="item item8"></a>
             <div class="item17 itemLore">
                 <h2 class="proy">
                     CASA JF
                 </h2>
-                <p class="proy2">Ubicación: Guaymallén, Mendoza.</p>
-                <p class="proy2">Superficie: 130m2</p>
-                <p class="proy2">Año: 2021</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Guaymallén, Mendoza.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>130m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2021</p> 
             </div>
             <a href="./casaSL.html" class="item item9"></a>
             <div class="item18 itemLore">
                 <h2 class="proy">
                     CASA SL
                 </h2>
-                <p class="proy2">Ubicación: Maipú, Mendoza.</p>
-                <p class="proy2">Superficie: 47m2</p>
-                <p class="proy2">Año: 2021</p> 
+                <p class="proy2"><span class="ubicacion proy2">Ubicación: </span>Maipú, Mendoza.</p>
+                <p class="proy2"><span class="superficie proy2">Superficie: </span>47m2</p>
+                <p class="proy2"><span class="año proy2">Año: </span>2021</p> 
             </div>
         </div>
         <!-- Grid fin -->
@@ -155,7 +155,7 @@
     <a href="https://api.whatsapp.com/send?phone=542616806234&text=Hola,%20me%20interesa%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
     <!-- Botón up fin -->
     <footer class="miFooter">
-        <p class="copyrights">© 2024 ESTUDIO/3</p>
+        <p class="copyrights">© 2025 ESTUDIO/3</p>
         <p class="copyrights2" id="copyrights">Todos los derechos reservados.</p>
         <div class="contenedorFooter">
             <div class="boton" id="icon-facebook">

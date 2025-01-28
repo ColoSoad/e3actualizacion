@@ -45,13 +45,13 @@ function cargarEstadoDeLenguaje() {
 function cambiar(data) {
     if (lenguajeInput.checked) {
         // Cambiar al idioma del JSON
-        proyectoNav.textContent = data[0].index.liNavProyecto;
-        estudioNav.textContent = data[0].index.liNavEstudio;
-        servicioNav.textContent = data[0].index.liNavServicio;
-        contactoNav.textContent = data[0].index.liNavContacto;
+        proyectoNav.textContent = data[0].navbar.liNavProyecto;
+        estudioNav.textContent = data[0].navbar.liNavEstudio;
+        servicioNav.textContent = data[0].navbar.liNavServicio;
+        contactoNav.textContent = data[0].navbar.liNavContacto;
         spanish.textContent = 'ENGLISH';
         eslogan.textContent = data[0].index.sloganPrincipal;
-        footer.textContent = data[0].index.footer;
+        footer.textContent = data[0].footers.footer;
     } else {
         // Cambiar de nuevo al español
         proyectoNav.textContent = 'PROYECTOS';

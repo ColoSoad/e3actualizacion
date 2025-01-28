@@ -28,7 +28,9 @@ html {
 body {
     background-color: #2a3a47;
 }
-
+input:required {
+    content: asdasd;
+}
 .grad {
     padding: 50px;
     color: grey;
@@ -89,7 +91,7 @@ main {
 
 .nav-a {
     padding: 0.5em 0.8em;
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff80;
     position: relative;
     text-decoration: none;
     font-size: 20px;
@@ -586,6 +588,14 @@ h3 {
     letter-spacing: 0.2rem;
 }
 
+.parrafoService {
+    color: #ffffff80;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
 .matricula {
     transform: translateY(20%);
     color: #0b0b0b;
@@ -629,6 +639,11 @@ h3 {
     margin-top: 100px;
 }
 
+.miFooter2 {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
 .copyrights {
     text-align: center;
     font-weight: 600;
@@ -724,6 +739,10 @@ h3 {
 .separadorSpan {
     color: #000;
     margin: 0 10px 0 10px;
+}
+
+.label-languaje {
+    cursor: pointer;
 }
 /* ////////////////////////////// */
 
