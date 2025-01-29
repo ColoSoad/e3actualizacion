@@ -940,23 +940,18 @@ h3 {
     } */
 }
 
-@media only screen and (min-width: 535px) and (max-width: 767px) {
-    /* .slide {
-        width: 75%;
-        margin: 0 auto;
-    } */
-}
+@media (min-width: 535px) and (max-width: 600px) and (min-height: 213px) and (max-height: 300px) {
+    #modal {
+        width: 85%;
+        max-width: 85%;
+        padding: 0;
+        opacity: 1;
+    }
 
-#modal {
-    width: auto;
-    max-width: 100%;
-    padding: 0;
-    opacity: 1;
-}
-
-.slidecar {
-    width: 100%;
-    height: auto;
+    .slidecar {
+        width: 100%;
+        height: 270px;
+    }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
