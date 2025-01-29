@@ -61,10 +61,4 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
-window.addEventListener('resize', () => {
-    if (window.innerWidth > window.innerHeight) {
-        alert(`Pantalla en landscape: ${window.innerWidth}px x ${window.innerHeight}px`);
-    }
-});
-
 recuperarInfoDePreferences();
