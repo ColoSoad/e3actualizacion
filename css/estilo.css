@@ -793,6 +793,7 @@ h3 {
 }
 
 .contenido {
+    width: 100%;
     position: relative;
     z-index: 1;
     color: white;
@@ -803,23 +804,93 @@ h3 {
 
 .imagenes {
     margin: 0 auto;
-    background-image: url(../multimedia/img/Ariel.jpg);
+    background-image: url(../multimedia/img/Ariel3.jpg);
     height: 300px;
     width: 70%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.imagenes2 {
+    margin: 0 auto;
+    background-image: url(../multimedia/img/poster2.jpg);
+    height: 350px;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 }
 
 .informacionPersonal {
-    margin: 25px auto 25px auto;
+    margin: 25px auto 75px auto;
     height: auto;
     width: 70%;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
     background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
+.whatsappContacto {
+    color: #4bec67;
+    position: static;
+    text-align: center;
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsappContacto:hover {
+    transition: all 0.3s ease-in-out;
+    font-size: 45px;
+    color: #fff;
+}
+
+.gmail {
+    margin-left: 20px;
+    color: #de1b18;
+    position: static;
+    text-align: center;
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.gmail:hover {
+    transition: all 0.3s ease-in-out;
+    font-size: 45px;
+    color: #c71310;
+}
+
+.h1Consulta {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font-family: 'AgencyFB', 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+    border-radius: 10px;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+.form-control {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+}
+
+.btn {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+}
 .h2arqui {
     margin: 0%;
     letter-spacing: 0.1em;
@@ -838,16 +909,18 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: linear-gradient(
         to right,
-        rgb(17, 17, 17),
+        rgb(25, 25, 25),
         rgb(40, 40, 40),
-        rgb(255, 255, 255),
+        rgb(180, 180, 180),
         rgb(160, 152, 152),
-        rgb(205, 205, 205),
+        rgb(180, 180, 180),
         rgb(40, 40, 40),
-        rgb(17, 17, 17)
+        rgb(25, 25, 25)
     );
     letter-spacing: 0.1em;
-    filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.8));
+    filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+    border-radius: 10px;
 }
 
 .sloganVideoprime {
@@ -856,6 +929,7 @@ h3 {
     align-items: center;
     margin: 80px 0 0 0;
     height: 100px;
+    width: 100%;
 }
 /* ////////////////////////////// */
 
@@ -913,6 +987,127 @@ h3 {
     }
 }
 @media only screen and (min-width: 479px) and (max-width: 768px) {
+    .h2arqui {
+        margin: 0%;
+        letter-spacing: 0.1em;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 25px;
+    }
+
+    .sloganVideo {
+        margin-bottom: 0%;
+        font-size: 50px;
+        font-weight: 900;
+        padding: 5px;
+        text-transform: uppercase;
+        background-clip: text;
+        color: transparent;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: linear-gradient(
+            to right,
+            rgb(25, 25, 25),
+            rgb(40, 40, 40),
+            rgb(180, 180, 180),
+            rgb(160, 152, 152),
+            rgb(180, 180, 180),
+            rgb(40, 40, 40),
+            rgb(25, 25, 25)
+        );
+        letter-spacing: 0.1em;
+        filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+        border-radius: 10px;
+    }
+
+    .sloganVideoprime {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0 0 0;
+        height: 100px;
+        width: 100%;
+    }
+    .h1Consulta {
+        width: 70%;
+        padding: 20px;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        font-family: 'AgencyFB', 'Courier New', Courier, monospace;
+        font-weight: normal;
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+        border-radius: 10px;
+    }
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contenido {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        margin-top: 20%;
+        padding: 25px;
+    }
+
+    .imagenes {
+        margin: 0 auto;
+        background-image: url(../multimedia/img/Ariel3.jpg);
+        height: 300px;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    .imagenes2 {
+        margin: 0 auto;
+        background-image: url(../multimedia/img/poster2.jpg);
+        height: 350px;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    .informacionPersonal {
+        margin: 25px auto 75px auto;
+        height: auto;
+        width: 70%;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+
+    /* //////////////////////////////////////////////////////////// */
     .slidecar {
         width: 100%;
         height: auto;
