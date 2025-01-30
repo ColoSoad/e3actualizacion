@@ -85,8 +85,8 @@ instagram.addEventListener('click', (e) => {
 
 // EVENTO PARA SABER BIEN LAS DIMENSIONES
 
-window.addEventListener('resize', () => {
-    if (window.innerWidth < window.innerHeight) {
-        alert(`Pantalla en landscape: ${window.innerWidth}px x ${window.innerHeight}px`);
-    }
-});
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth < window.innerHeight) {
+//         alert(`Pantalla en landscape: ${window.innerWidth}px x ${window.innerHeight}px`);
+//     }
+// });

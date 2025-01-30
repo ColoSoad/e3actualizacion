@@ -76,10 +76,45 @@
             </nav>
         </header>
         <main>
-            <p class="tituloTarjeta">
-                ESTO ES UNA PAGINA PARA PRUEBAS DE ESTILO Y CONTENIDO
-            </p>
-            
+            <div class="sloganVideoprime">
+                <span class="sloganVideo">
+                    CONTACTO
+                </span>
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="../multimedia/videos/videoE3.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <div class="contenido">
+                <div class="imagenes"></div>
+                <div class="informacionPersonal">
+                    <h1>ARIEL MANZANO</h1>
+                    <h2 class="h2arqui">arquitecto</h2>
+                    <p class="h2arqui">MAT N°: 123456789</p>
+                    <p class="h2arqui">CEL: (+54 9 2616806234)</p>
+                    <p class="h2arqui">MAIL: estudio/3@gmail.com.ar</p>
+                </div>
+                <h1 id="h1Consulta">Consulta</h1>
+                <form id="form" action="https://formspree.io/f/mknleraq" method="post"
+                    enctype="application/x-www-form-urlencoded" netlify>
+                    <label class="box" for="Nombre"></label><input type="text" class="form-control" name="Nombre"
+                    required placeholder="Nombre" />
+                    <label class="box" for="Apellido"></label><input type="text" class="form-control" required
+                        name="Apellido" placeholder="Apellido" />
+                    <label class="box" for="Email"></label><input type="email" class="form-control" id="email"
+                        name="Email" required placeholder="Email" />
+                    <div class="areatext mb-3">
+                        <label for="Mensaje"></label>
+                        <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Déjanos tu consulta!"
+                            id="floatingTextarea2" style="height: 200px"></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
+                    </div>
+                </form>        
+            </div>
         </main>
         <footer class="miFooter">
             <p class="copyrights">© 2024 ESTUDIO/3</p>
