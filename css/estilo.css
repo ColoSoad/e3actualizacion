@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
 @font-face {
     font-family: 'AgencyFB';
     src: url(../fonts/AgencyFB.ttf);
@@ -11,8 +13,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 
 * {
     margin: 0%;
@@ -806,7 +806,7 @@ h3 {
     margin: 0 auto;
     background-image: url(../multimedia/img/Ariel3.jpg);
     height: 300px;
-    width: 70%;
+    width: 80%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -818,7 +818,7 @@ h3 {
     margin: 0 auto;
     background-image: url(../multimedia/img/poster2.jpg);
     height: 350px;
-    width: 70%;
+    width: 80%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -829,7 +829,7 @@ h3 {
 .informacionPersonal {
     margin: 25px auto 75px auto;
     height: auto;
-    width: 70%;
+    width: 80%;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -865,7 +865,7 @@ h3 {
 }
 
 .h1Consulta {
-    width: 70%;
+    width: 80%;
     padding: 20px;
     margin: 0 auto;
     color: #fff;
@@ -881,7 +881,7 @@ h3 {
 }
 
 form {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 .form-control {
@@ -907,16 +907,7 @@ form {
     background-clip: text;
     color: transparent;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: linear-gradient(
-        to right,
-        rgb(25, 25, 25),
-        rgb(40, 40, 40),
-        rgb(180, 180, 180),
-        rgb(160, 152, 152),
-        rgb(180, 180, 180),
-        rgb(40, 40, 40),
-        rgb(25, 25, 25)
-    );
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(220, 217, 217), rgb(255, 255, 255));
     letter-spacing: 0.1em;
     filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
@@ -1248,6 +1239,44 @@ form {
         opacity: 1;
     }
 
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 90px;
+    }
+
+    .imagenes,
+    .imagenes2 {
+        justify-self: center;
+        margin: 0%;
+        height: 450px;
+    }
+
+    .imagenes2 {
+        margin-top: 60px;
+        order: 3;
+    }
+
+    .informacionPersonal {
+        justify-self: center;
+        margin: 0;
+        height: 450px;
+    }
+
+    .cotac {
+        margin-top: 60px;
+    }
+
+    .video-container video {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .label-languaje {
         position: absolute;
         top: 30px;
@@ -1433,6 +1462,12 @@ form {
         transform: translateY(35px);
     }
 
+    .formularios {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
     /* .h1contact {
         margin: 0%;
         padding-bottom: 70px;
@@ -1440,6 +1475,50 @@ form {
     /* ------------------------------------------------------------------------------------------------------------------------------------ */
 }
 @media only screen and (min-width: 1025px) and (max-width: 2820px) {
+    .formularios {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 90px;
+    }
+
+    .imagenes,
+    .imagenes2 {
+        justify-self: center;
+        margin: 0%;
+        height: 450px;
+    }
+
+    .imagenes2 {
+        margin-top: 60px;
+        order: 3;
+    }
+
+    .informacionPersonal {
+        justify-self: center;
+        margin: 0;
+        height: 450px;
+    }
+
+    .cotac {
+        margin-top: 60px;
+    }
+
+    .video-container video {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     #modal {
         width: 908px;
         padding: 0;
