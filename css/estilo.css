@@ -1503,6 +1503,7 @@ form {
     }
 
     .informacionPersonal {
+        padding: 45px 0;
         justify-self: center;
         margin: 0;
         height: 450px;

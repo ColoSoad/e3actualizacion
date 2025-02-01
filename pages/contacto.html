@@ -61,7 +61,7 @@
         </nav>
     </header>
     <!-- Sistema de 12 columnas y flexbox -->
-    <section class="container-fluid grad">
+    <!-- <section class="container-fluid grad">
         <div class="row">
             <div class="derecha">
                 <h1 class="h1contact">contactos</h1>
@@ -69,7 +69,7 @@
                     <div class="">
                     </div>
                     <div class="contactos"></div>
-                </div>
+                </div> -->
                 <!-- <div class="tarjetas">
                     <div class="container">
                         <div class="card card1">
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                </div>-->
+                </div>
             </div>
             <div class="col-md-6 mt-5">
                 <div class="mb-3 formula">
@@ -152,9 +152,61 @@
             <h3 id="h3Contacto">¡Seguinos en nuestras redes sociales!</h3>
         </div>
         
-    </section>
+    </section>-->
     <!-- Sistema de 12 columnas y flexbox fin -->
     <!-- Botón up inicia -->
+    <main>
+        <div class="sloganVideoprime">
+            <span id="h1contact" class="sloganVideo">
+                CONTACTOS
+            </span>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="../multimedia/videos/videoE3.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+        <div class="contenido">
+            <div class="imagenes"></div>
+            <div class="informacionPersonal">
+                <h1>ARIEL MANZANO</h1>
+                <h2 class="h2arqui arquitecto">arquitecto</h2>
+                <p class="h2arqui" id="matricula">MAT N°: 123456789</p>
+                <a href="https://api.whatsapp.com/send?phone=542616806234&text=Hola,%20me%20interesa%20m%C3%A1s%20informaci%C3%B3n.%20Gracias!" target="_blank" class="whatsappContacto"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:joelhernanmiranda@gmail.com" target="_blank" class="gmail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="imagenes2"></div>
+            <div class="informacionPersonal cotac">
+                <h1>HUMBERTO VELEZ</h1>
+                <h2 class="h2arqui arquitecto">arquitecto</h2>
+                <p class="h2arqui" id="matricula2">MAT N°: 123456789</p>
+                <a href="#" target="_blank" class="whatsappContacto"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" target="_blank" class="gmail"><i class="fa-solid fa-envelope"></i></a>
+            </div>        
+        </div>
+        <div class="formularios">
+            <h1 id="h1Consulta" class="h1Consulta">Consulta</h1>
+            <form id="form" action="https://formspree.io/f/mknleraq" method="post"
+                enctype="application/x-www-form-urlencoded" netlify>
+                <label class="box" for="Nombre"></label><input type="text" class="form-control" name="Nombre"
+                required placeholder="Nombre" />
+                <label class="box" for="Apellido"></label><input type="text" class="form-control" required
+                    name="Apellido" placeholder="Apellido" />
+                <label class="box" for="Email"></label><input type="email" class="form-control" id="email"
+                    name="Email" required placeholder="Email" />
+                <div class="areatext mb-3">
+                    <label for="Mensaje"></label>
+                    <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Déjanos tu consulta!"
+                        id="floatingTextarea2" style="height: 200px"></textarea>
+                </div>
+                <div class="d-grid">
+                    <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
+                </div>
+            </form>
+            <h3 id="h3Contacto">¡Seguinos en nuestras redes sociales!</h3>
+        </div>
+    </main>
     <a href="#" class="subir"><i class="fa-solid fa-chevron-up"></i></a>
     
     <!-- Botón up fin -->

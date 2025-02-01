@@ -35,6 +35,8 @@
         },
         "aboutUs": {
             "tituloPrincipal": "ABOUT US",
+            "arquitectos": "Architect",
+            "matriculas": "Lic N°: 123456789",
             "consulta": "INQUIRIES",
             "siguenos": "SOCIALS"
         },
