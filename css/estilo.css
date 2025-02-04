@@ -28,9 +28,7 @@ html {
 body {
     background-color: #2a3a47;
 }
-input:required {
-    content: asdasd;
-}
+
 .grad {
     padding: 50px;
     color: grey;
@@ -1241,7 +1239,8 @@ form {
 
     .contenido {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3, auto);
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -1257,7 +1256,7 @@ form {
 
     .imagenes2 {
         margin-top: 60px;
-        order: 3;
+        /* order: 0; */
     }
 
     .informacionPersonal {
@@ -1266,7 +1265,17 @@ form {
         height: 450px;
     }
 
+    .formularios {
+        grid-column: span 2; /* Ocupa las dos columnas */
+        padding: 60px 0 0 0; /* Opcional: más tamaño interno */
+    }
+
+    .swap {
+        grid-row: 0;
+    }
+
     .cotac {
+        grid-row: 2;
         margin-top: 60px;
     }
 
@@ -1474,43 +1483,85 @@ form {
     } */
     /* ------------------------------------------------------------------------------------------------------------------------------------ */
 }
-@media only screen and (min-width: 1025px) and (max-width: 2820px) {
-    .formularios {
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-    }
-
+@media only screen and (min-width: 1025px) and (max-width: 3000px) {
     .contenido {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 300px);
         align-items: center;
         justify-content: center;
-        gap: 10px;
-        margin-bottom: 90px;
+        gap: 30px;
+        margin: 60px 0 0 0;
     }
 
     .imagenes,
     .imagenes2 {
-        justify-self: center;
-        margin: 0%;
-        height: 450px;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        justify-self: flex-end;
+    }
+
+    .imagenes {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
     .imagenes2 {
-        margin-top: 60px;
-        order: 3;
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
 
     .informacionPersonal {
-        padding: 45px 0;
-        justify-self: center;
-        margin: 0;
-        height: 450px;
+        align-self: center;
+        height: 300px;
+        justify-self: flex-start;
+        margin: 0%;
     }
 
     .cotac {
-        margin-top: 60px;
+        margin: 0;
+        height: 280px;
+    }
+    .formularios {
+        grid-column: 3/4;
+        grid-row: 1/4;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        height: 100%;
+        justify-self: flex-start;
+    }
+
+    .d-grid {
+        margin: 35px 0 0 0;
+        height: 60px;
+    }
+    .btn {
+        text-transform: uppercase;
+        font-size: larger;
+        letter-spacing: 5px;
+        font-weight: bold !important;
+    }
+
+    .nombreArquitecto {
+        margin: 55px 0 0 0;
+        font-size: 32px;
+    }
+
+    .sloganVideo {
+        margin: 0%;
+        padding: 0 16px 0 16px;
+    }
+
+    main {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .h2arqui {
+        font-size: 16px;
     }
 
     .video-container video {
@@ -1710,5 +1761,10 @@ form {
     .h1contact {
         margin: 0%;
         padding-bottom: 70px;
+    }
+}
+@media only screen and (min-width: 1220px) and (max-width: 3000px) {
+    .formularios {
+        width: 600px;
     }
 }

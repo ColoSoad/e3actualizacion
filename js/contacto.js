@@ -78,9 +78,8 @@ function cambiar(data, checker) {
         h1Consulta.textContent = data[0].aboutUs.consulta;
         form.innerHTML = formEnglish;
         h3Contacto.textContent = data[0].aboutUs.siguenos;
-        // arquitecto.textContent = data[0].aboutUs.arquitectos;
-        matricula.textContent = data[0].aboutUs.matriculas;
-        matricula2.textContent = data[0].aboutUs.matriculas;
+        // matricula.textContent = data[0].aboutUs.matriculas;
+        // matricula2.textContent = data[0].aboutUs.matriculas;
         arquitecto.forEach((arquitectoElement) => {
             if (checker) {
                 arquitectoElement.textContent = data[0].aboutUs.arquitectos;
@@ -98,8 +97,8 @@ function cambiar(data, checker) {
         h1Consulta.textContent;
         form.innerHTML = formEspañol;
         h3Contacto.textContent;
-        arquitecto.textContent;
-        matricula.textContent;
+        // matricula.textContent;
+        // matricula2.textContent;
     }
 }
 
