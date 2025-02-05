@@ -57,7 +57,7 @@ function cambiar(data) {
         proyectoNav.textContent = 'PROYECTOS';
         estudioNav.textContent = 'ESTUDIO';
         servicioNav.textContent = 'SERVICIOS';
-        contactoNav.textContent = 'CONTACTO';
+        contactoNav.textContent = 'CONTACTOS';
         footer.textContent = 'Todos los derechos reservados.';
         spanish.textContent = 'ESPAÑOL';
         eslogan.textContent = 'Diseñamos tus sueños, construimos tu realidad.';

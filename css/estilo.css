@@ -908,7 +908,7 @@ form {
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(220, 217, 217), rgb(255, 255, 255));
     letter-spacing: 0.1em;
     filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important; */
     border-radius: 10px;
 }
 
@@ -992,19 +992,8 @@ form {
         background-clip: text;
         color: transparent;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        background-image: linear-gradient(
-            to right,
-            rgb(25, 25, 25),
-            rgb(40, 40, 40),
-            rgb(180, 180, 180),
-            rgb(160, 152, 152),
-            rgb(180, 180, 180),
-            rgb(40, 40, 40),
-            rgb(25, 25, 25)
-        );
         letter-spacing: 0.1em;
         filter: drop-shadow(1px 1px 8px rgba(22, 22, 22, 0.3));
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
         border-radius: 10px;
     }
 
@@ -1767,5 +1756,8 @@ form {
 @media only screen and (min-width: 1220px) and (max-width: 3000px) {
     .formularios {
         width: 600px;
+    }
+    .informacionPersonal {
+        height: 100%;
     }
 }
