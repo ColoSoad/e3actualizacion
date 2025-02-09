@@ -1,8 +1,29 @@
 const facebook = document.querySelector('#icon-facebook');
 const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
-const openModal = document.querySelector('#btnOpenModal');
-const closeModal = document.querySelector('#btnCloseModal');
+const divs = document.querySelectorAll('.clickable-div');
+const dialogs = {
+    dialog1: document.getElementById('dialog1'),
+    dialog2: document.getElementById('dialog2'),
+    dialog3: document.getElementById('dialog3'),
+    dialog4: document.getElementById('dialog4'),
+    dialog5: document.getElementById('dialog5'),
+    dialog6: document.getElementById('dialog6'),
+    dialog7: document.getElementById('dialog7'),
+    dialog8: document.getElementById('dialog8'),
+    dialog9: document.getElementById('dialog9'),
+};
+divs.forEach((div) => {
+    div.addEventListener('click', () => {
+        const dialogId = div.getAttribute('data-dialog');
+        const dialog = dialogs[dialogId];
+        if (dialog) {
+            dialog.showModal();
+        }
+    });
+});
+// const openModal = document.querySelector('#btnOpenModal');
+const closeModalButtons = document.querySelectorAll('.btn-Close-Modal');
 //ENLACE AL DOM LENGUAJE
 const proyectoNav = document.querySelector('#proyecto-nav');
 const estudioNav = document.querySelector('#estudio-nav');
@@ -90,11 +111,14 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
-openModal.addEventListener('click', (e) => {
-    modal.showModal();
-});
-closeModal.addEventListener('click', () => {
-    modal.close();
+// openModal.addEventListener('click', (e) => {
+//     modal.showModal();
+// });
+
+closeModalButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        button.closest('dialog').close();
+    });
 });
 
 recuperarInfoDePreferences();
