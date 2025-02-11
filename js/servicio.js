@@ -3,7 +3,6 @@ const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
 //ENLACE AL DOM LENGUAJE
 const proyectoNav = document.querySelector('#proyecto-nav');
-const estudioNav = document.querySelector('#estudio-nav');
 const servicioNav = document.querySelector('#servicio-nav');
 const contactoNav = document.querySelector('#contacto-nav');
 const footer = document.querySelector('#copyrights');
@@ -30,7 +29,6 @@ async function obtenerJson(checker) {
 function cambiar(data, checker) {
     if (checker) {
         proyectoNav.textContent = data[0].navbar.liNavProyecto;
-        estudioNav.textContent = data[0].navbar.liNavEstudio;
         servicioNav.textContent = data[0].navbar.liNavServicio;
         contactoNav.textContent = data[0].navbar.liNavContacto;
         footer.textContent = data[0].footers.footer;
@@ -38,7 +36,6 @@ function cambiar(data, checker) {
         parrafoService.textContent = data[0].service.parrafoPrincipal;
     } else {
         proyectoNav.textContent;
-        estudioNav.textContent;
         servicioNav.textContent;
         contactoNav.textContent;
         footer.textContent;

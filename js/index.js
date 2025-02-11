@@ -6,7 +6,6 @@ const lenguajeInput = document.querySelector('#lenguaje');
 const lenguajeLabel = document.querySelector('#label-lenguaje');
 const spanish = document.querySelector('.spanEspañol');
 const proyectoNav = document.querySelector('#proyecto-nav');
-const estudioNav = document.querySelector('#estudio-nav');
 const servicioNav = document.querySelector('#servicio-nav');
 const contactoNav = document.querySelector('#contacto-nav');
 const eslogan = document.querySelector('#sloganPrincipal');
@@ -46,7 +45,6 @@ function cambiar(data) {
     if (lenguajeInput.checked) {
         // Cambiar al idioma del JSON
         proyectoNav.textContent = data[0].navbar.liNavProyecto;
-        estudioNav.textContent = data[0].navbar.liNavEstudio;
         servicioNav.textContent = data[0].navbar.liNavServicio;
         contactoNav.textContent = data[0].navbar.liNavContacto;
         spanish.textContent = 'ENGLISH';
@@ -55,8 +53,7 @@ function cambiar(data) {
     } else {
         // Cambiar de nuevo al español
         proyectoNav.textContent = 'PROYECTOS';
-        estudioNav.textContent = 'ESTUDIO';
-        servicioNav.textContent = 'SERVICIOS';
+        servicioNav.textContent = 'SERVICIOS Y ESTUDIO';
         contactoNav.textContent = 'CONTACTOS';
         footer.textContent = 'Todos los derechos reservados.';
         spanish.textContent = 'ESPAÑOL';

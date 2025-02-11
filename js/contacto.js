@@ -3,7 +3,6 @@ const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
 //ENLACE AL DOM LENGUAJE
 const proyectoNav = document.querySelector('#proyecto-nav');
-const estudioNav = document.querySelector('#estudio-nav');
 const servicioNav = document.querySelector('#servicio-nav');
 const contactoNav = document.querySelector('#contacto-nav');
 const footer = document.querySelector('#copyrights');
@@ -12,8 +11,7 @@ const h1Consulta = document.querySelector('#h1Consulta');
 const form = document.querySelector('#form');
 const h3Contacto = document.querySelector('#h3Contacto');
 const arquitecto = document.querySelectorAll('.arquitecto');
-const matricula = document.querySelector('#matricula');
-const matricula2 = document.querySelector('#matricula2');
+const videoContainer = document.querySelector('.video-container');
 //LITERALS
 const formEnglish = `<form id="form" action="https://formspree.io/f/mknleraq" method="post"
                     enctype="application/x-www-form-urlencoded" netlify>
@@ -54,6 +52,20 @@ const formEspañol = `<form id="form" action="https://formspree.io/f/mknleraq" m
                         <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
                     </div>
                 </form>`;
+const videoLandscape = `<div class="video-container">
+<video autoplay muted loop>
+    <source src="../multimedia/videos/videoLandscape.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+</video>
+</div>`;
+
+const videoPortrait = `<div class="video-container">
+<video autoplay muted loop>
+    <source src="../multimedia/videos/videoPortrait.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+</video>
+</div>`;
+
 // VARIABLES
 const URL = '../json/en.json';
 // FUNCIONALIDADES
@@ -74,7 +86,6 @@ async function obtenerJson(checker) {
 function cambiar(data, checker) {
     if (checker) {
         proyectoNav.textContent = data[0].navbar.liNavProyecto;
-        estudioNav.textContent = data[0].navbar.liNavEstudio;
         servicioNav.textContent = data[0].navbar.liNavServicio;
         contactoNav.textContent = data[0].navbar.liNavContacto;
         footer.textContent = data[0].footers.footer;
@@ -82,8 +93,6 @@ function cambiar(data, checker) {
         h1Consulta.textContent = data[0].aboutUs.consulta;
         form.innerHTML = formEnglish;
         h3Contacto.textContent = data[0].aboutUs.siguenos;
-        // matricula.textContent = data[0].aboutUs.matriculas;
-        // matricula2.textContent = data[0].aboutUs.matriculas;
         arquitecto.forEach((arquitectoElement) => {
             if (checker) {
                 arquitectoElement.textContent = data[0].aboutUs.arquitectos;
@@ -93,7 +102,6 @@ function cambiar(data, checker) {
         });
     } else {
         proyectoNav.textContent;
-        estudioNav.textContent;
         servicioNav.textContent;
         contactoNav.textContent;
         footer.textContent;
@@ -101,8 +109,6 @@ function cambiar(data, checker) {
         h1Consulta.textContent;
         form.innerHTML = formEspañol;
         h3Contacto.textContent;
-        // matricula.textContent;
-        // matricula2.textContent;
     }
 }
 
@@ -120,4 +126,9 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 767) {
+        videoContainer.innerHTML = videoLandscape;
+    } else [(videoContainer.innerHTML = videoPortrait)];
+});
 recuperarInfoDePreferences();

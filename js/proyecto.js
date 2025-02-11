@@ -2,6 +2,7 @@ const facebook = document.querySelector('#icon-facebook');
 const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
 const divs = document.querySelectorAll('.clickable-div');
+const closeModalButtons = document.querySelectorAll('.btn-Close-Modal');
 const dialogs = {
     dialog1: document.getElementById('dialog1'),
     dialog2: document.getElementById('dialog2'),
@@ -13,20 +14,9 @@ const dialogs = {
     dialog8: document.getElementById('dialog8'),
     dialog9: document.getElementById('dialog9'),
 };
-divs.forEach((div) => {
-    div.addEventListener('click', () => {
-        const dialogId = div.getAttribute('data-dialog');
-        const dialog = dialogs[dialogId];
-        if (dialog) {
-            dialog.showModal();
-        }
-    });
-});
-// const openModal = document.querySelector('#btnOpenModal');
-const closeModalButtons = document.querySelectorAll('.btn-Close-Modal');
+
 //ENLACE AL DOM LENGUAJE
 const proyectoNav = document.querySelector('#proyecto-nav');
-const estudioNav = document.querySelector('#estudio-nav');
 const servicioNav = document.querySelector('#servicio-nav');
 const contactoNav = document.querySelector('#contacto-nav');
 const footer = document.querySelector('#copyrights');
@@ -56,7 +46,6 @@ async function obtenerJson(checker) {
 function cambiar(data, checker) {
     if (checker) {
         proyectoNav.textContent = data[0].navbar.liNavProyecto;
-        estudioNav.textContent = data[0].navbar.liNavEstudio;
         servicioNav.textContent = data[0].navbar.liNavServicio;
         contactoNav.textContent = data[0].navbar.liNavContacto;
         footer.textContent = data[0].footers.footer;
@@ -85,7 +74,6 @@ function cambiar(data, checker) {
         baño.textContent = data[0].projects.baño;
     } else {
         proyectoNav.textContent;
-        estudioNav.textContent;
         servicioNav.textContent;
         contactoNav.textContent;
         footer.textContent;
@@ -111,9 +99,15 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
-// openModal.addEventListener('click', (e) => {
-//     modal.showModal();
-// });
+divs.forEach((div) => {
+    div.addEventListener('click', () => {
+        const dialogId = div.getAttribute('data-dialog');
+        const dialog = dialogs[dialogId];
+        if (dialog) {
+            dialog.showModal();
+        }
+    });
+});
 
 closeModalButtons.forEach((button) => {
     button.addEventListener('click', () => {
