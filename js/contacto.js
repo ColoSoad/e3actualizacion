@@ -11,7 +11,7 @@ const h1Consulta = document.querySelector('#h1Consulta');
 const form = document.querySelector('#form');
 const h3Contacto = document.querySelector('#h3Contacto');
 const arquitecto = document.querySelectorAll('.arquitecto');
-const videoContainer = document.querySelector('.video-container');
+
 //LITERALS
 const formEnglish = `<form id="form" action="https://formspree.io/f/mknleraq" method="post"
                     enctype="application/x-www-form-urlencoded" netlify>
@@ -52,19 +52,6 @@ const formEspañol = `<form id="form" action="https://formspree.io/f/mknleraq" m
                         <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
                     </div>
                 </form>`;
-const videoLandscape = `<div class="video-container">
-<video autoplay muted loop>
-    <source src="../multimedia/videos/videoLandscape.mp4" type="video/mp4">
-    Tu navegador no soporta videos.
-</video>
-</div>`;
-
-const videoPortrait = `<div class="video-container">
-<video autoplay muted loop>
-    <source src="../multimedia/videos/videoPortrait.mp4" type="video/mp4">
-    Tu navegador no soporta videos.
-</video>
-</div>`;
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -126,9 +113,66 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 767) {
-        videoContainer.innerHTML = videoLandscape;
-    } else [(videoContainer.innerHTML = videoPortrait)];
-});
+const video = document.getElementById('bg-video');
+const source = video.querySelector('source');
+
+// Función para cambiar el video según la orientación
+function cambiarVideoSegunOrientacion() {
+    const esPortrait = window.matchMedia('(orientation: portrait)').matches;
+    const nuevoSrc = esPortrait ? '../multimedia/videos/videoPortrait.mp4' : '../multimedia/videos/videoLandscape.mp4';
+
+    if (source.getAttribute('src') !== nuevoSrc) {
+        source.setAttribute('src', nuevoSrc);
+        video.load(); // Recargar el video con la nueva fuente
+    }
+}
+
+// Detectar orientación al cargar la página
+document.addEventListener('DOMContentLoaded', cambiarVideoSegunOrientacion);
+
+// Detectar cambios de orientación en tiempo real
+window.addEventListener('resize', cambiarVideoSegunOrientacion);
+
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth > 767) {
+//         videoContainer.innerHTML = videoLandscape;
+//     } else [(videoContainer.innerHTML = videoPortrait)];
+// });
+
+// ///////////////////////////////////////////////////////// //
+
+async function esperarCargaVideo(video) {
+    return new Promise((resolve) => {
+        const interval = setInterval(() => {
+            if (video.buffered.length > 0 && video.duration) {
+                let porcentajeCargado = (video.buffered.end(0) / video.duration) * 100;
+                console.log(`Video cargado: ${porcentajeCargado.toFixed(2)}%`);
+
+                if (porcentajeCargado >= 50) {
+                    clearInterval(interval); // Detener el intervalo
+                    resolve(); // Continuar con la ejecución
+                }
+            }
+        }, 100); // Verificamos cada 100ms
+    });
+}
+
+async function inicializarPagina() {
+    const video = document.getElementById('bg-video');
+    const contenidoMain = document.getElementById('contenidoMain');
+    const loader = document.getElementById('loader');
+
+    // Espera a que el video cargue al menos al 50%
+    await esperarCargaVideo(video);
+
+    // Ocultar el loader
+    loader.style.display = 'none';
+
+    // Mostrar el contenido con una transición suave
+    contenidoMain.style.opacity = '1';
+}
+
+// Llamamos a la función para iniciar la espera
+inicializarPagina();
+
 recuperarInfoDePreferences();
