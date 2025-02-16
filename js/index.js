@@ -10,6 +10,7 @@ const servicioNav = document.querySelector('#servicio-nav');
 const contactoNav = document.querySelector('#contacto-nav');
 const eslogan = document.querySelector('#sloganPrincipal');
 const footer = document.querySelector('#copyrights');
+const navItems = document.querySelector('navItems');
 
 // VARIABLES
 const URL = './json/en.json';
@@ -24,7 +25,14 @@ async function obtener() {
         const data = await respuesta.json(); // Esperar la conversión a JSON
         cambiar(data); // Cambiar el idioma con los datos obtenidos
     } catch (error) {
-        alert('ERROR AL INTENTAR TRAER INFORMACION DEL LENGUAJE SELECCIONADO... POR FAVOR RECARGA EL SITIO'); // Manejo de errores
+        // alert('ERROR AL INTENTAR TRAER INFORMACION DEL LENGUAJE SELECCIONADO... POR FAVOR RECARGA EL SITIO');
+        Swal.fire({
+            title: 'Error al obtener los datos del JSON',
+            icon: 'error',
+            timer: 5000,
+            timerProgressBar: true,
+            confirmButtonColor: '#2a3a47',
+        }); // Manejo de errores
     }
 }
 function guardarInfoDeLenguaje() {
@@ -79,11 +87,3 @@ facebook.addEventListener('click', (e) => {
 instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
-
-// EVENTO PARA SABER BIEN LAS DIMENSIONES
-
-// window.addEventListener('resize', () => {
-//     if (window.innerWidth < window.innerHeight) {
-//         alert(`Pantalla en landscape: ${window.innerWidth}px x ${window.innerHeight}px`);
-//     }
-// });

@@ -22,7 +22,13 @@ async function obtenerJson(checker) {
 
         cambiar(data, checker); // Cambiar el idioma con los datos obtenidos
     } catch (error) {
-        alert('Error al obtener los datos del JSON:', error); // Manejo de errores
+        Swal.fire({
+            title: 'Error al obtener los datos del JSON',
+            icon: 'error',
+            timer: 5000,
+            timerProgressBar: true,
+            confirmButtonColor: '#2a3a47',
+        }); // Manejo de errores
     }
 }
 

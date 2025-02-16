@@ -13,8 +13,7 @@ const h3Contacto = document.querySelector('#h3Contacto');
 const arquitecto = document.querySelectorAll('.arquitecto');
 
 //LITERALS
-const formEnglish = `<form id="form" action="https://formspree.io/f/mknleraq" method="post"
-                    enctype="application/x-www-form-urlencoded" netlify>
+const formEnglish = `<form id="form" action="https://formsubmit.co/4fae83c50e2a0e78e8125e300c0cb633" method="post">
                     <label class="box" for="nombre"></label>
                     <input type="text" id="nombre" class="form-control" name="Nombre"
                     required placeholder="Name" />
@@ -25,16 +24,17 @@ const formEnglish = `<form id="form" action="https://formspree.io/f/mknleraq" me
                         name="Email" required placeholder="Email" autocomplete="email" />
                     <div class="areatext mb-3">
                         <label for="floatingTextarea2"></label>
-                        <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Leave us your inquiry!"
+                        <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Leave us your comments!"
                             id="floatingTextarea2" style="height: 200px"></textarea>
                     </div>
                     <div class="d-grid">
                         <input type="submit" class="btn btn-secondary btn-block" value="Send">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/pages/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
                     </div>
                 </form>`;
 
-const formEspañol = `<form id="form" action="https://formspree.io/f/mknleraq" method="post"
-                    enctype="application/x-www-form-urlencoded" netlify>
+const formEspañol = `<form id="form" action="https://formsubmit.co/4fae83c50e2a0e78e8125e300c0cb633" method="post">
                     <label class="box" for="nombre"></label>
                     <input type="text" id="nombre" class="form-control" name="Nombre"
                     required placeholder="Nombre" />
@@ -50,6 +50,8 @@ const formEspañol = `<form id="form" action="https://formspree.io/f/mknleraq" m
                     </div>
                     <div class="d-grid">
                         <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/pages/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
                     </div>
                 </form>`;
 
@@ -66,7 +68,13 @@ async function obtenerJson(checker) {
 
         cambiar(data, checker); // Cambiar el idioma con los datos obtenidos
     } catch (error) {
-        alert('Error al obtener los datos del JSON:', error); // Manejo de errores
+        Swal.fire({
+            title: 'Error al obtener los datos del JSON',
+            icon: 'error',
+            timer: 5000,
+            timerProgressBar: true,
+            confirmButtonColor: '#2a3a47',
+        }); // Manejo de errores
     }
 }
 
@@ -133,20 +141,11 @@ document.addEventListener('DOMContentLoaded', cambiarVideoSegunOrientacion);
 // Detectar cambios de orientación en tiempo real
 window.addEventListener('resize', cambiarVideoSegunOrientacion);
 
-// window.addEventListener('resize', () => {
-//     if (window.innerWidth > 767) {
-//         videoContainer.innerHTML = videoLandscape;
-//     } else [(videoContainer.innerHTML = videoPortrait)];
-// });
-
-// ///////////////////////////////////////////////////////// //
-
 async function esperarCargaVideo(video) {
     return new Promise((resolve) => {
         const interval = setInterval(() => {
             if (video.buffered.length > 0 && video.duration) {
                 let porcentajeCargado = (video.buffered.end(0) / video.duration) * 100;
-                console.log(`Video cargado: ${porcentajeCargado.toFixed(2)}%`);
 
                 if (porcentajeCargado >= 50) {
                     clearInterval(interval); // Detener el intervalo
@@ -158,6 +157,7 @@ async function esperarCargaVideo(video) {
 }
 
 async function inicializarPagina() {
+    recuperarInfoDePreferences();
     const video = document.getElementById('bg-video');
     const contenidoMain = document.getElementById('contenidoMain');
     const loader = document.getElementById('loader');
@@ -174,5 +174,3 @@ async function inicializarPagina() {
 
 // Llamamos a la función para iniciar la espera
 inicializarPagina();
-
-recuperarInfoDePreferences();

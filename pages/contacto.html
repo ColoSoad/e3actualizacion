@@ -15,6 +15,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <!-- BS js v 5.1 fin -->
+    <!-- SweetAlert2 Inicia -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SweetAlert2 Fin -->
     <!-- js local inicia -->
     <script defer src="../js/contacto.js"></script>
     <!-- js local fin -->
@@ -89,8 +92,7 @@
             </div>
             <div class="formularios">
                 <h1 id="h1Consulta" class="h1Consulta">Consulta</h1>
-                <form id="form" action="https://formspree.io/f/mknleraq" method="post"
-                    enctype="application/x-www-form-urlencoded" netlify>
+                <form id="form" action="https://formsubmit.co/4fae83c50e2a0e78e8125e300c0cb633" method="post">
                     <label class="box" for="nombre"></label>
                     <input type="text" id="nombre" class="form-control" name="Nombre"
                     required placeholder="Nombre" />
@@ -106,8 +108,29 @@
                     </div>
                     <div class="d-grid">
                         <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/pages/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
                     </div>
                 </form>
+                <!-- <form id="form" action="https://formspree.io/f/mknleraq" method="post"
+                enctype="application/x-www-form-urlencoded" netlify>
+                <label class="box" for="nombre"></label>
+                <input type="text" id="nombre" class="form-control" name="Nombre"
+                required placeholder="Nombre" />
+                <label class="box" for="apellido"></label>
+                <input type="text" id="apellido" class="form-control" required
+                    name="Apellido" placeholder="Apellido" />
+                <label class="box" for="email"></label><input type="email" class="form-control" id="email"
+                    name="Email" required placeholder="Email" autocomplete="email" />
+                <div class="areatext mb-3">
+                    <label for="floatingTextarea2"></label>
+                    <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Déjanos tu consulta!"
+                        id="floatingTextarea2" style="height: 200px"></textarea>
+                </div>
+                <div class="d-grid">
+                    <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
+                </div>
+            </form> -->
                 
             </div>        
         </div>
