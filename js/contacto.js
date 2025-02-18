@@ -1,6 +1,11 @@
 const facebook = document.querySelector('#icon-facebook');
 const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
+const video = document.getElementById('bg-video');
+
+const source = video.querySelector('source');
+const contenidoMain = document.getElementById('contenidoMain');
+const loader = document.getElementById('loader');
 //ENLACE AL DOM LENGUAJE
 const proyectoNav = document.querySelector('#proyecto-nav');
 const servicioNav = document.querySelector('#servicio-nav');
@@ -11,49 +16,11 @@ const h1Consulta = document.querySelector('#h1Consulta');
 const form = document.querySelector('#form');
 const h3Contacto = document.querySelector('#h3Contacto');
 const arquitecto = document.querySelectorAll('.arquitecto');
-
-//LITERALS
-const formEnglish = `<form id="form" action="https://formsubmit.co/4fae83c50e2a0e78e8125e300c0cb633" method="post">
-                    <label class="box" for="nombre"></label>
-                    <input type="text" id="nombre" class="form-control" name="Nombre"
-                    required placeholder="Name" />
-                    <label class="box" for="apellido"></label>
-                    <input type="text" id="apellido" class="form-control" required
-                        name="Apellido" placeholder="Last Name" />
-                    <label class="box" for="email"></label><input type="email" class="form-control" id="email"
-                        name="Email" required placeholder="Email" autocomplete="email" />
-                    <div class="areatext mb-3">
-                        <label for="floatingTextarea2"></label>
-                        <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Leave us your comments!"
-                            id="floatingTextarea2" style="height: 200px"></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <input type="submit" class="btn btn-secondary btn-block" value="Send">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/pages/contacto.html">
-                        <input type="hidden" name="_captcha" value="false">
-                    </div>
-                </form>`;
-
-const formEspañol = `<form id="form" action="https://formsubmit.co/4fae83c50e2a0e78e8125e300c0cb633" method="post">
-                    <label class="box" for="nombre"></label>
-                    <input type="text" id="nombre" class="form-control" name="Nombre"
-                    required placeholder="Nombre" />
-                    <label class="box" for="apellido"></label>
-                    <input type="text" id="apellido" class="form-control" required
-                        name="Apellido" placeholder="Apellido" />
-                    <label class="box" for="email"></label><input type="email" class="form-control" id="email"
-                        name="Email" required placeholder="Email" autocomplete="email" />
-                    <div class="areatext mb-3">
-                        <label for="floatingTextarea2"></label>
-                        <textarea class="mb-3 form-control" name="Mensaje" required placeholder="Déjanos tu consulta!"
-                            id="floatingTextarea2" style="height: 200px"></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/pages/contacto.html">
-                        <input type="hidden" name="_captcha" value="false">
-                    </div>
-                </form>`;
+const inputNombre = document.querySelector('#nombre');
+const inputApellido = document.querySelector('#apellido');
+const inputEmail = document.querySelector('#email');
+const textArea = document.querySelector('#floatingTextarea2');
+const btnEnviar = document.querySelector('#enviar');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -86,7 +53,11 @@ function cambiar(data, checker) {
         footer.textContent = data[0].footers.footer;
         tituloPrincipal.textContent = data[0].aboutUs.tituloPrincipal;
         h1Consulta.textContent = data[0].aboutUs.consulta;
-        form.innerHTML = formEnglish;
+        inputNombre.placeholder = data[0].aboutUs.nombre;
+        inputApellido.placeholder = data[0].aboutUs.apellido;
+        inputEmail.placeholder = data[0].aboutUs.email;
+        textArea.placeholder = data[0].aboutUs.textarea;
+        btnEnviar.value = data[0].aboutUs.btnEnviar;
         h3Contacto.textContent = data[0].aboutUs.siguenos;
         arquitecto.forEach((arquitectoElement) => {
             if (checker) {
@@ -96,13 +67,17 @@ function cambiar(data, checker) {
             }
         });
     } else {
+        inputNombre.placeholder;
+        inputApellido.placeholder;
+        inputEmail.placeholder;
+        textArea.placeholder;
+        btnEnviar.value;
         proyectoNav.textContent;
         servicioNav.textContent;
         contactoNav.textContent;
         footer.textContent;
         tituloPrincipal.textContent;
         h1Consulta.textContent;
-        form.innerHTML = formEspañol;
         h3Contacto.textContent;
     }
 }
@@ -120,9 +95,6 @@ facebook.addEventListener('click', (e) => {
 instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
-
-const video = document.getElementById('bg-video');
-const source = video.querySelector('source');
 
 // Función para cambiar el video según la orientación
 function cambiarVideoSegunOrientacion() {
@@ -152,22 +124,16 @@ async function esperarCargaVideo(video) {
                     resolve(); // Continuar con la ejecución
                 }
             }
-        }, 100); // Verificamos cada 100ms
+        }, 100);
     });
 }
 
 async function inicializarPagina() {
     recuperarInfoDePreferences();
-    const video = document.getElementById('bg-video');
-    const contenidoMain = document.getElementById('contenidoMain');
-    const loader = document.getElementById('loader');
-
     // Espera a que el video cargue al menos al 50%
     await esperarCargaVideo(video);
-
     // Ocultar el loader
     loader.style.display = 'none';
-
     // Mostrar el contenido con una transición suave
     contenidoMain.style.opacity = '1';
 }

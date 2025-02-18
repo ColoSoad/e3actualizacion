@@ -28,7 +28,12 @@
             "arquitectos": "Architect",
             "matriculas": "Lic N°: 123456789",
             "consulta": "COMMENTS",
-            "siguenos": "SOCIALS"
+            "siguenos": "SOCIALS",
+            "nombre": "Name",
+            "apellido": "Last Name",
+            "email": "E-mail",
+            "textarea": "Leave us your comment",
+            "btnEnviar": "SEND"
         },
         "navbars": {
             "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS",
