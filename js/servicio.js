@@ -8,6 +8,7 @@ const contactoNav = document.querySelector('#contacto-nav');
 const footer = document.querySelector('#copyrights');
 const h1Servicio = document.querySelector('#h1Servicio');
 const parrafoService = document.querySelector('#pServicio');
+const etiquetaTitle = document.querySelector('#title');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -40,6 +41,7 @@ function cambiar(data, checker) {
         footer.textContent = data[0].footers.footer;
         h1Servicio.textContent = data[0].service.tituloPrincipal;
         parrafoService.textContent = data[0].service.parrafoPrincipal;
+        etiquetaTitle.textContent = data[0].title.servicio;
     } else {
         proyectoNav.textContent;
         servicioNav.textContent;
@@ -47,6 +49,7 @@ function cambiar(data, checker) {
         footer.textContent;
         h1Servicio.textContent;
         parrafoService.textContent;
+        etiquetaTitle.textContent;
     }
 }
 

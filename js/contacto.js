@@ -21,6 +21,7 @@ const inputApellido = document.querySelector('#apellido');
 const inputEmail = document.querySelector('#email');
 const textArea = document.querySelector('#floatingTextarea2');
 const btnEnviar = document.querySelector('#enviar');
+const etiquetaTitle = document.querySelector('#title');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -59,6 +60,7 @@ function cambiar(data, checker) {
         textArea.placeholder = data[0].aboutUs.textarea;
         btnEnviar.value = data[0].aboutUs.btnEnviar;
         h3Contacto.textContent = data[0].aboutUs.siguenos;
+        etiquetaTitle.textContent = data[0].title.contacto;
         arquitecto.forEach((arquitectoElement) => {
             if (checker) {
                 arquitectoElement.textContent = data[0].aboutUs.arquitectos;
@@ -79,6 +81,7 @@ function cambiar(data, checker) {
         tituloPrincipal.textContent;
         h1Consulta.textContent;
         h3Contacto.textContent;
+        etiquetaTitle.textContent;
     }
 }
 

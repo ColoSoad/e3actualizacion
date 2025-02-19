@@ -39,6 +39,11 @@
             "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS",
             "nav1": "NAVBAR 1",
             "nav2": "NAVBAR 2"
+        },
+        "title": {
+            "proyecto": "PROJECTS",
+            "servicio": "SERVICES & STUDIO",
+            "contacto": "ABOUT US"
         }
     }
 ]

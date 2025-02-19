@@ -25,6 +25,7 @@ const año = document.querySelectorAll('.año');
 const ubicacion = document.querySelectorAll('.ubicacion');
 const superficie = document.querySelectorAll('.superficie');
 const baño = document.querySelector('#baño');
+const etiquetaTitle = document.querySelector('#title');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -56,6 +57,7 @@ function cambiar(data, checker) {
         contactoNav.textContent = data[0].navbar.liNavContacto;
         footer.textContent = data[0].footers.footer;
         tituloPrincipal.textContent = data[0].projects.tituloPrincipal;
+        etiquetaTitle.textContent = data[0].title.proyecto;
         año.forEach((añoElement) => {
             if (checker) {
                 añoElement.textContent = data[0].projects.año;
@@ -88,6 +90,7 @@ function cambiar(data, checker) {
         ubicacion.textContent;
         superficie.textContent;
         baño.textContent;
+        etiquetaTitle.textContent;
     }
 }
 
