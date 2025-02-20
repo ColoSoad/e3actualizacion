@@ -21,7 +21,8 @@
         },
         "service": {
             "tituloPrincipal": "OUR SERVICES",
-            "parrafoPrincipal": "Our services are designed to meet your needs."
+            "parrafoPrincipal": "Our services are designed to meet your needs.",
+            "parrafoDescriptivo": "We innovate and design unique spaces that combine functionality and aesthetics. In our architecture studio, we turn ideas into reality, adapting to each client with customized solutions. We believe in quality, creativity, and attention to detail to create projects that inspire and improve people's lives."
         },
         "aboutUs": {
             "tituloPrincipal": "ABOUT US",
