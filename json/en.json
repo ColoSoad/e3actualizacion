@@ -22,7 +22,9 @@
         "service": {
             "tituloPrincipal": "OUR SERVICES",
             "parrafoPrincipal": "Our services are designed to meet your needs.",
-            "parrafoDescriptivo": "We innovate and design unique spaces that combine functionality and aesthetics. In our architecture studio, we turn ideas into reality, adapting to each client with customized solutions. We believe in quality, creativity, and attention to detail to create projects that inspire and improve people's lives."
+            "parrafoDescriptivo1": "We innovate and design unique spaces that combine functionality and aesthetics. In our architecture studio, we turn ideas into reality, adapting to each client with customized solutions. We believe in quality, creativity, and attention to detail to create projects that inspire and improve people's lives.",
+            "parrafoDescriptivo2": "Investing in construction guarantees comfort, security, and property value. Whether building from scratch, expanding, or remodeling, we demonstrate our skill and speed in quoting projects with precision and efficiency.",
+            "parrafoDescriptivo3": "We offer expert consulting in architectural projects, interior design, technical management, project supervision, and construction. We provide customized solutions, ensuring efficiency, quality, and compliance at every stage of the process."
         },
         "aboutUs": {
             "tituloPrincipal": "ABOUT US",

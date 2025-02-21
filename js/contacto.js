@@ -132,7 +132,6 @@ async function esperarCargaVideo(video) {
 }
 
 async function inicializarPagina() {
-    recuperarInfoDePreferences();
     // Espera a que el video cargue al menos al 50%
     await esperarCargaVideo(video);
     // Ocultar el loader
@@ -140,6 +139,6 @@ async function inicializarPagina() {
     // Mostrar el contenido con una transición suave
     contenidoMain.style.opacity = '1';
 }
-
+recuperarInfoDePreferences();
 // Llamamos a la función para iniciar la espera
 inicializarPagina();

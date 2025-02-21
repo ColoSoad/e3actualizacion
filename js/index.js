@@ -48,6 +48,7 @@ function cargarEstadoDeLenguaje() {
         lenguajeInput.checked = savedState.isCheckedLenguaje; // Actualizar el estado del checkbox
     }
 }
+
 // Función para cambiar el idioma del párrafo
 function cambiar(data) {
     if (lenguajeInput.checked) {
@@ -76,10 +77,6 @@ lenguajeInput.addEventListener('change', () => {
     obtener(); // Cambiar el idioma al cambiar el checkbox
 });
 
-// Llamar a la función para cargar el estado al iniciar la página
-cargarEstadoDeLenguaje();
-obtener(); // Llamamos obtener inicialmente para ajustar el texto según el estado actual del checkbox
-
 facebook.addEventListener('click', (e) => {
     window.open('https://www.facebook.com/profile.php?id=100071002556214', '_blank');
 });
@@ -87,3 +84,7 @@ facebook.addEventListener('click', (e) => {
 instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
+guardarInfoDeLenguaje();
+// Llamar a la función para cargar el estado al iniciar la página
+cargarEstadoDeLenguaje();
+obtener(); // Llamamos obtener inicialmente para ajustar el texto según el estado actual del checkbox
