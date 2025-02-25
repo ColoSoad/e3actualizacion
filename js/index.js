@@ -25,7 +25,6 @@ async function obtener() {
         const data = await respuesta.json(); // Esperar la conversión a JSON
         cambiar(data); // Cambiar el idioma con los datos obtenidos
     } catch (error) {
-        // alert('ERROR AL INTENTAR TRAER INFORMACION DEL LENGUAJE SELECCIONADO... POR FAVOR RECARGA EL SITIO');
         Swal.fire({
             title: 'Error al obtener los datos del JSON',
             icon: 'error',
@@ -84,7 +83,7 @@ facebook.addEventListener('click', (e) => {
 instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
-guardarInfoDeLenguaje();
-// Llamar a la función para cargar el estado al iniciar la página
+
 cargarEstadoDeLenguaje();
-obtener(); // Llamamos obtener inicialmente para ajustar el texto según el estado actual del checkbox
+guardarInfoDeLenguaje();
+obtener();

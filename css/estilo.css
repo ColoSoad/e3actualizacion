@@ -43,33 +43,8 @@ html {
     z-index: 10;
 }
 
-.efectoTipeo {
-    animation: teclear 3s steps(50);
-}
-
-@keyframes teclear {
-    from {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    }
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-}
-
-@keyframes efecto {
-    50% {
-        border-color: transparent;
-    }
-}
-
 body {
     background-color: #2a3a47;
-}
-
-.grad {
-    padding: 50px;
-    color: grey;
-    background: linear-gradient(#2a3a47, #000, #000, #2a3a47);
 }
 
 .videosServicio {
@@ -101,10 +76,6 @@ img {
 
 main {
     padding-top: 15px;
-}
-
-.mainProyecto {
-    padding-top: 75px;
 }
 
 .barra {
@@ -413,12 +384,31 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: grey;
+    background: linear-gradient(#2a3a47, #000, #000, #2a3a47);
 }
 
-.izq,
-.centro,
-.der {
-    padding: 30px;
+.textos {
+    margin-top: 120px;
+}
+
+.efectoTipeo {
+    animation: teclear 3s steps(50);
+}
+
+@keyframes teclear {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes efecto {
+    50% {
+        border-color: transparent;
+    }
 }
 
 @keyframes show {
@@ -459,7 +449,6 @@ h3 {
 .formularios,
 .formula,
 .parrafoService,
-#h1Servicio,
 .videosServicio {
     view-timeline-name: --items;
     view-timeline-axis: block;
@@ -1411,6 +1400,18 @@ form {
         width: 50%;
         display: block;
         margin: 0 auto;
+    }
+
+    .videos {
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: grey;
+        background: linear-gradient(#2a3a47, #000, #000, #2a3a47); */
+    }
+
+    .textos {
+        margin-top: 0px;
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 3000px) {

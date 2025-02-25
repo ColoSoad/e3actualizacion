@@ -2,13 +2,19 @@ const facebook = document.querySelector('#icon-facebook');
 const instagram = document.querySelector('#icon-instagram');
 const linkedin = document.querySelector('#icon-linkedin');
 //ENLACE AL DOM LENGUAJE
+const etiquetaTitle = document.querySelector('#title');
 const proyectoNav = document.querySelector('#proyecto-nav');
 const servicioNav = document.querySelector('#servicio-nav');
 const contactoNav = document.querySelector('#contacto-nav');
 const footer = document.querySelector('#copyrights');
-const h1Servicio = document.querySelector('#h1Servicio');
-const parrafoService = document.querySelector('#pServicio');
-const etiquetaTitle = document.querySelector('#title');
+const tituloPrincipal = document.querySelector('#tituloPrincipal');
+const parrafoPrincipal = document.querySelector('#parrafoPrincipal');
+const tituloServicio = document.querySelector('#tituloServicio');
+const parrafoService = document.querySelector('#parrafoService');
+const tituloInversion = document.querySelector('#tituloInversion');
+const parrafoInversion = document.querySelector('#parrafoInversion');
+const tituloAsesoria = document.querySelector('#tituloAsesoria');
+const parrafoAsesoria = document.querySelector('#parrafoAsesoria');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -35,21 +41,33 @@ async function obtenerJson(checker) {
 
 function cambiar(data, checker) {
     if (checker) {
+        etiquetaTitle.textContent = data[0].title.servicio;
         proyectoNav.textContent = data[0].navbar.liNavProyecto;
         servicioNav.textContent = data[0].navbar.liNavServicio;
         contactoNav.textContent = data[0].navbar.liNavContacto;
         footer.textContent = data[0].footers.footer;
-        h1Servicio.textContent = data[0].service.tituloPrincipal;
-        parrafoService.textContent = data[0].service.parrafoPrincipal;
-        etiquetaTitle.textContent = data[0].title.servicio;
+        tituloPrincipal.textContent = data[0].service.tituloPrincipal;
+        parrafoPrincipal.textContent = data[0].service.parrafoPrincipal;
+        tituloServicio.textContent = data[0].service.tituloServicio;
+        parrafoService.textContent = data[0].service.parrafoService;
+        tituloInversion.textContent = data[0].service.tituloInversion;
+        parrafoInversion.textContent = data[0].service.parrafoInversion;
+        tituloAsesoria.textContent = data[0].service.tituloAsesoria;
+        parrafoAsesoria.textContent = data[0].service.parrafoAsesoria;
     } else {
+        etiquetaTitle.textContent;
         proyectoNav.textContent;
         servicioNav.textContent;
         contactoNav.textContent;
         footer.textContent;
-        h1Servicio.textContent;
+        tituloPrincipal.textContent;
+        parrafoPrincipal.textContent;
+        tituloServicio.textContent;
         parrafoService.textContent;
-        etiquetaTitle.textContent;
+        tituloInversion.textContent;
+        parrafoInversion.textContent;
+        tituloAsesoria.textContent;
+        parrafoAsesoria.textContent;
     }
 }
 
