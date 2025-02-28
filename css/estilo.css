@@ -53,8 +53,6 @@ body {
     filter: saturate(3);
     filter: brightness(1.15);
     filter: contrast(1.15);
-    -webkit-box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
-    -moz-box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
     box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
 }
 
@@ -373,18 +371,6 @@ h3 {
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
     font-weight: normal;
     text-transform: uppercase;
-}
-
-.videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: grey;
-    background: linear-gradient(#2a3a47, #000, #000, #2a3a47);
-}
-
-.textos {
-    margin-top: 120px;
 }
 
 .efectoTipeo {
@@ -881,11 +867,50 @@ form {
     border-radius: 50%;
     justify-self: center;
     margin: 65px 0 25px 0;
-    -webkit-box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
-    -moz-box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
     box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
 }
 
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: grey;
+    background: linear-gradient(#2a3a47, #000, #000, #2a3a47);
+    border-radius: 0% 20% 15% 0%;
+    box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
+    padding: 35px 0 35px 0;
+    border: #222f3a solid 1px;
+}
+
+.textos {
+    margin-top: 20px;
+}
+
+.textoPrincipalService {
+    width: 100%;
+    height: auto;
+    border-radius: 30% 10%;
+    box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
+    background-color: #000;
+    padding: 25px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.textos {
+    align-self: center;
+    border-radius: 0% 20% 15% 0%;
+    box-shadow: 0px 0px 170px 144px inset #4c70db33;
+    background-color: #000;
+    border: #222f3a solid 1px;
+    margin-bottom: 25px;
+}
+
+.izq,
+.centro,
+.der {
+    margin-bottom: 25px;
+}
 @media only screen and (min-width: 300px) and (max-width: 479px) {
     .padd {
         padding: 15px 0 0 0;
@@ -1399,28 +1424,24 @@ form {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 600px);
         margin-top: 120px;
-        border-radius: 30% 10%;
-        -webkit-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
-        -moz-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
+        border-radius: 30% 0%;
         box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
-        background-color: #000;
+        padding: 35px 0 35px 0;
+        border: #222f3a solid 2px;
     }
     .izq,
-    .cen,
+    .centro,
     .der {
-        border-radius: 30% 10%;
-        -webkit-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
-        -moz-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
-        box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
+        border-radius: 0% 0% 0% 30%;
+        box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
         background-color: #000;
     }
 
     .textos {
+        padding: 25px;
         margin-top: 0px;
         align-self: center;
         border-radius: 30% 10%;
-        -webkit-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
-        -moz-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
         box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
         background-color: #000;
     }
@@ -1437,8 +1458,6 @@ form {
         width: 100%;
         height: auto;
         border-radius: 30% 10%;
-        -webkit-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
-        -moz-box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
         box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
         background-color: #000;
         padding: 25px;
@@ -1677,26 +1696,6 @@ form {
         order: 17;
     }
 
-    .e-right,
-    .e-left2,
-    .e-right3 {
-        padding-top: 85px;
-    }
-    .e-left,
-    .e-right2,
-    .e-left3 {
-        filter: grayscale(1);
-    }
-    .e-left:hover {
-        filter: grayscale(0);
-    }
-    .e-right2:hover {
-        filter: grayscale(0);
-    }
-    .e-left3:hover {
-        filter: grayscale(0);
-    }
-
     .slidcar {
         height: 620px;
     }
@@ -1732,6 +1731,93 @@ form {
         animation-name: show;
         animation-range: entry 25% cover 50%;
         animation-fill-mode: both;
+    }
+
+    .mainServices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .videos {
+        width: 100%;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 600px);
+        margin-top: 120px;
+        border-radius: 30% 0%;
+        box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
+        padding: 35px 0 35px 0;
+        border: #222f3a solid 2px;
+    }
+    .izq,
+    .centro,
+    .der {
+        border-radius: 0% 0% 0% 30%;
+        box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
+        background-color: #000;
+        width: 75%;
+        margin-left: 50px;
+    }
+
+    .textos {
+        margin-left: 150px;
+        width: 75%;
+        margin-top: 0px;
+        align-self: center;
+        border-radius: 30% 10%;
+        box-shadow: 0px 0px 170px 144px inset #4c70db33;
+        background-color: #4c70db33;
+        transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    }
+
+    .textos:hover {
+        box-shadow: 0px 0px 50px 20px rgba(76, 112, 219, 0.5);
+        background-color: #000;
+    }
+
+    .parrafoService {
+        color: #fff;
+    }
+
+    .logoService {
+        align-self: center;
+    }
+    .logoPrincipalYtextoPrincipal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textoPrincipalService {
+        width: 60%;
+        height: auto;
+        border-radius: 30% 10%;
+        box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
+        background-color: #000;
+        padding: 25px;
+        margin-top: 75px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #parrafoPrincipal {
+        justify-self: center;
+        text-align: center;
+        height: auto;
+        width: 70%;
+    }
+    .videosServicio {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logoService {
+        height: 500px;
+        width: 500px;
     }
 }
 @media only screen and (min-width: 1220px) and (max-width: 3000px) {
