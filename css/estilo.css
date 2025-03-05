@@ -169,6 +169,7 @@ h1 {
 }
 
 .proy {
+    margin: 0%;
     padding: 0%;
     text-align: start;
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
@@ -177,11 +178,18 @@ h1 {
 }
 
 .proy2 {
+    margin: 0%;
     padding: 0%;
     text-align: start;
-    font-family: 'arial', Courier, monospace;
-    font-weight: normal;
+    font-family: 'Courier New', 'AgencyFB', Courier, monospace;
     font-size: 18px;
+    color: #caced1;
+}
+
+.inicioMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .sloganIndex {
@@ -202,15 +210,20 @@ h1 {
     color: transparent;
     background-image: linear-gradient(to right, rgb(187, 186, 186), rgb(144, 141, 141), rgb(162, 160, 160), rgb(162, 160, 160));
     letter-spacing: 0.1em;
+    padding: 0 25px 0 25px;
 }
 
 .logoIndex {
-    margin-top: 0%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px;
-    padding: 30px;
-    grid-gap: 20px;
+    height: 350px;
+    width: 350px;
+    background-image: url(../multimedia/img/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    border: #222f3a solid;
+    border-radius: 50%;
+    justify-self: center;
+    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
+    margin: 50px auto 50px auto;
 }
 
 .logoFIjo {
@@ -224,6 +237,13 @@ h1 {
 .logoSliders {
     height: 300px;
     object-fit: cover;
+}
+.logoSlider1,
+.logoSlider2 {
+    height: 300px;
+    object-fit: cover;
+    width: 95%;
+    margin: 0 auto 35px auto;
 }
 
 dialog {
@@ -429,6 +449,8 @@ h3 {
 .imagenes2,
 .formularios,
 .formula,
+.textoPrincipalService,
+.textos,
 .parrafoService,
 .videosServicio {
     view-timeline-name: --items;
@@ -551,7 +573,7 @@ h3 {
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.2rem;
-    padding: 45px 45px 0px 45px;
+    padding: 0px 45px 0px 45px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -882,14 +904,10 @@ form {
     border: #222f3a solid 1px;
 }
 
-.textos {
-    margin-top: 20px;
-}
-
 .textoPrincipalService {
     width: 100%;
     height: auto;
-    border-radius: 30% 10%;
+    border-radius: 15% 0%;
     box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
     background-color: #000;
     padding: 25px;
@@ -903,7 +921,8 @@ form {
     box-shadow: 0px 0px 170px 144px inset #4c70db33;
     background-color: #000;
     border: #222f3a solid 1px;
-    margin-bottom: 25px;
+    margin: 0%;
+    padding: 0 0 55px 0;
 }
 
 .izq,
@@ -912,6 +931,9 @@ form {
     margin-bottom: 25px;
 }
 @media only screen and (min-width: 300px) and (max-width: 479px) {
+    .textoPrincipalService {
+        border-radius: 25% 0%;
+    }
     .padd {
         padding: 15px 0 0 0;
     }
@@ -1256,17 +1278,6 @@ form {
         padding-top: 75px;
         padding-bottom: 75px;
     }
-    .inicioMain {
-        height: 900px;
-    }
-
-    .logoIndex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
-        padding: 40px 20px 0 20px;
-        grid-gap: 15x;
-    }
 
     .logoFIjo {
         grid-column: 1/2;
@@ -1435,6 +1446,8 @@ form {
         border-radius: 0% 0% 0% 30%;
         box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
         background-color: #000;
+        width: 75%;
+        margin-left: 50px;
     }
 
     .textos {
@@ -1455,13 +1468,15 @@ form {
     }
 
     .textoPrincipalService {
-        width: 100%;
+        width: 75%;
         height: auto;
         border-radius: 30% 10%;
         box-shadow: 0px 0px 170px 144px inset rgba(76, 112, 219, 0.2);
         background-color: #000;
         padding: 25px;
         margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #parrafoPrincipal {
@@ -1470,8 +1485,53 @@ form {
         height: auto;
         width: 70%;
     }
+
+    .txtIzq {
+        order: 0;
+    }
+    .izq {
+        order: 1;
+    }
+
+    .centro {
+        order: 2;
+    }
+
+    .txtCentro {
+        order: 3;
+    }
+
+    .txtDer {
+        order: 4;
+    }
+
+    .der {
+        order: 5;
+    }
 }
 @media only screen and (min-width: 1025px) and (max-width: 3000px) {
+    .txtIzq {
+        order: 0;
+    }
+    .izq {
+        order: 1;
+    }
+
+    .centro {
+        order: 2;
+    }
+
+    .txtCentro {
+        order: 3;
+    }
+
+    .txtDer {
+        order: 4;
+    }
+
+    .der {
+        order: 5;
+    }
     .contenido {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1586,15 +1646,7 @@ form {
     }
 
     .inicioMain {
-        height: 950px;
-    }
-
-    .logoIndex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
-        padding: 80px 110px 0 0;
-        grid-gap: 15x;
+        height: 100%;
     }
 
     .logoFIjo {
@@ -1815,7 +1867,8 @@ form {
         margin-left: auto;
         margin-right: auto;
     }
-    .logoService {
+    .logoService,
+    .logoIndex {
         height: 500px;
         width: 500px;
     }
