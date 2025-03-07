@@ -15,6 +15,10 @@ const tituloInversion = document.querySelector('#tituloInversion');
 const parrafoInversion = document.querySelector('#parrafoInversion');
 const tituloAsesoria = document.querySelector('#tituloAsesoria');
 const parrafoAsesoria = document.querySelector('#parrafoAsesoria');
+const tituloRenovacion = document.querySelector('#tituloRenovacion');
+const parrafoRenovacion = document.querySelector('#parrafoRenovacion');
+const tituloElegirnos = document.querySelector('#tituloElegirnos');
+const parrafoElegirnos = document.querySelector('#parrafoElegirnos');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -54,6 +58,10 @@ function cambiar(data, checker) {
         parrafoInversion.textContent = data[0].service.parrafoInversion;
         tituloAsesoria.textContent = data[0].service.tituloAsesoria;
         parrafoAsesoria.textContent = data[0].service.parrafoAsesoria;
+        tituloRenovacion.textContent = data[0].service.tituloRenovacion;
+        parrafoRenovacion.textContent = data[0].service.parrafoRenovacion;
+        tituloElegirnos.textContent = data[0].service.tituloElegirnos;
+        parrafoElegirnos.textContent = data[0].service.parrafoElegirnos;
     } else {
         etiquetaTitle.textContent;
         proyectoNav.textContent;
@@ -68,6 +76,10 @@ function cambiar(data, checker) {
         parrafoInversion.textContent;
         tituloAsesoria.textContent;
         parrafoAsesoria.textContent;
+        tituloRenovacion.textConten;
+        parrafoRenovacion.textContent;
+        tituloElegirnos.textContent;
+        parrafoElegirnos.textContent;
     }
 }
 

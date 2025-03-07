@@ -56,6 +56,35 @@ body {
     box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
 }
 
+.videosIndex {
+    width: 100%;
+    filter: saturate(3);
+    filter: brightness(1.15);
+    filter: contrast(1.15);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videosMainIndex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.videoIndex2 {
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.videoIndex3 {
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+}
+
 img {
     height: 35px;
 }
@@ -186,7 +215,42 @@ h1 {
     color: #caced1;
 }
 
+.btnVerMasContainer1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 35px;
+    width: 175px;
+    background: rgba(241, 241, 241, 0.5);
+    border-radius: 5px;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.btnVerMasContainer2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 35px;
+    width: 175px;
+    background: rgba(241, 241, 241, 0.5);
+    border-radius: 5px;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.btnVerMasChild {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2a3a47;
+    font-size: 22px;
+}
+
 .inicioMain {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -235,15 +299,19 @@ h1 {
 }
 
 .logoSliders {
-    height: 300px;
+    height: 200px;
     object-fit: cover;
+    filter: saturate(3);
+    filter: brightness(1.15);
+    filter: contrast(1.15);
 }
+
 .logoSlider1,
 .logoSlider2 {
-    height: 300px;
+    height: 200px;
     object-fit: cover;
-    width: 95%;
-    margin: 0 auto 35px auto;
+    width: 100%;
+    margin: 30px auto 30px auto;
 }
 
 dialog {
@@ -303,6 +371,9 @@ button {
 .item {
     background-size: cover;
     background-position: center;
+    filter: saturate(3);
+    filter: brightness(2);
+    filter: contrast(1.15);
 }
 
 .bun {
@@ -444,7 +515,7 @@ h3 {
 .item10,
 .centro,
 .der,
-.slide,
+.slidesIndex,
 .informacionPersonal,
 .imagenes2,
 .formularios,
@@ -452,6 +523,7 @@ h3 {
 .textoPrincipalService,
 .textos,
 .parrafoService,
+.videosIndex,
 .videosServicio {
     view-timeline-name: --items;
     view-timeline-axis: block;
@@ -930,6 +1002,7 @@ form {
 .der {
     margin-bottom: 25px;
 }
+
 @media only screen and (min-width: 300px) and (max-width: 479px) {
     .textoPrincipalService {
         border-radius: 25% 0%;
@@ -1493,12 +1566,12 @@ form {
         order: 1;
     }
 
-    .centro {
-        order: 2;
-    }
-
     .txtCentro {
         order: 3;
+    }
+
+    .centro {
+        order: 2;
     }
 
     .txtDer {
@@ -1507,6 +1580,22 @@ form {
 
     .der {
         order: 5;
+    }
+
+    .txtIzqBajo {
+        order: 7;
+    }
+
+    .izqAbajo {
+        order: 6;
+    }
+
+    .txtDerBajo {
+        order: 8;
+    }
+
+    .derAbajo {
+        order: 9;
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 3000px) {
@@ -1517,12 +1606,12 @@ form {
         order: 1;
     }
 
-    .centro {
-        order: 2;
-    }
-
     .txtCentro {
         order: 3;
+    }
+
+    .centro {
+        order: 2;
     }
 
     .txtDer {
@@ -1532,6 +1621,23 @@ form {
     .der {
         order: 5;
     }
+
+    .txtIzqBajo {
+        order: 7;
+    }
+
+    .izqAbajo {
+        order: 6;
+    }
+
+    .txtDerBajo {
+        order: 8;
+    }
+
+    .derAbajo {
+        order: 9;
+    }
+
     .contenido {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
