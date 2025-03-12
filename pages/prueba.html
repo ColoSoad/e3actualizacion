@@ -76,30 +76,21 @@
             </nav>
         </header>
         <main>
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Correo" required>
-                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-              </form>
-              <script>
-                document.getElementById("contactForm").addEventListener("submit", async function(event) {
-                  event.preventDefault();
-                  
-                  const formData = new FormData(this);
-                  const jsonData = {};
-                  formData.forEach((value, key) => { jsonData[key] = value; });
-                
-                  const response = await fetch("https://script.google.com/macros/s/AKfycbwQFReNYq1UwZ0j6C-UGeDm11o8-NMsI3JpP7V9DmR7Gbbz43uqJOhEhAm5h0vezisTwA/exec", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(jsonData)
-                  });
-                
-                  if (response.ok) alert("Formulario enviado con éxito!");
-                  else alert("Hubo un error al enviar el formulario.");
-                });
-                </script>
+            <div class="banner">
+                <!-- Video de fondo -->
+                <video autoplay muted loop>
+                    <source src="../multimedia/index1.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+        
+                <!-- Capa oscura -->
+                <div class="overlay"></div>
+        
+                <!-- Botón con fondo blur -->
+                <div class="content">
+                    <button class="btn">Ver más</button>
+                </div>
+            </div>
         </main>
         <footer class="miFooter">
             <p class="copyrights">© 2024 ESTUDIO/3</p>

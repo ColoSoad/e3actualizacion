@@ -214,38 +214,63 @@ h1 {
     font-size: 18px;
     color: #caced1;
 }
-
-.btnVerMasContainer1 {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    height: 35px;
-    width: 175px;
-    background: rgba(241, 241, 241, 0.5);
-    border-radius: 5px;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
+.banner {
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
 }
 
-.btnVerMasContainer2 {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    height: 35px;
-    width: 175px;
-    background: rgba(241, 241, 241, 0.5);
-    border-radius: 5px;
-    align-items: center;
+.bannerVideo {
     position: absolute;
-    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(2);
+    filter: brightness();
 }
 
-.btnVerMasChild {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #2a3a47;
-    font-size: 22px;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor del botón */
+.content {
+    width: 300px;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Botón con efecto blur */
+.btn {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #b2b2b2;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
+    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0px);
 }
 
 .inicioMain {
@@ -523,7 +548,10 @@ h3 {
 .textoPrincipalService,
 .textos,
 .parrafoService,
-.videosIndex,
+.banner,
+.overlay,
+.logoSlider1,
+.videosMainIndex,
 .videosServicio {
     view-timeline-name: --items;
     view-timeline-axis: block;

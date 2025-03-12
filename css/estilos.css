@@ -217,3 +217,70 @@ body {
 }
 
 /* ////////////////////////////// */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.banner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(2);
+    filter: brightness();
+}
+
+/* Capa oscura para mejorar la visibilidad del texto */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor del botón */
+.content {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Botón con efecto blur */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
+    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0px);
+}
