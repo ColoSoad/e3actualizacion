@@ -71,6 +71,7 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
+    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
 }
 
 .videoIndex2 {
@@ -215,7 +216,7 @@ h1 {
     color: #caced1;
 }
 .banner {
-    margin-top: 80px;
+    margin: 80px 0 80px 0;
     position: relative;
     width: 100%;
     height: 500px;
@@ -252,7 +253,26 @@ h1 {
     text-align: center;
 }
 
-/* Botón con efecto blur */
+.btn2 {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #b2b2b2;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
+    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn2:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0px);
+}
+
 .btn {
     width: 100%;
     display: inline-block;
@@ -263,7 +283,7 @@ h1 {
     background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
     backdrop-filter: blur(2px); /* Efecto de desenfoque */
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -326,6 +346,7 @@ h1 {
 .logoSliders {
     height: 200px;
     object-fit: cover;
+    width: 100%;
     filter: saturate(3);
     filter: brightness(1.15);
     filter: contrast(1.15);
@@ -336,7 +357,11 @@ h1 {
     height: 200px;
     object-fit: cover;
     width: 100%;
-    margin: 30px auto 30px auto;
+    margin: 0 auto 0 auto;
+    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
+}
+.logoCarousel {
+    margin: 40px 0 120px 0;
 }
 
 dialog {
