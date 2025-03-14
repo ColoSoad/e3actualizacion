@@ -24,7 +24,11 @@ const tituloPrincipal = document.querySelector('#tituloPrincipal');
 const año = document.querySelectorAll('.año');
 const ubicacion = document.querySelectorAll('.ubicacion');
 const superficie = document.querySelectorAll('.superficie');
+const casa = document.querySelectorAll('.textCasa');
 const baño = document.querySelector('#baño');
+const cabaña = document.querySelector('#textoCabaña');
+const ampliacion = document.querySelectorAll('.textoAmpliacion');
+const remodelacion = document.querySelector('#textoRemodelacion');
 const etiquetaTitle = document.querySelector('#title');
 
 // VARIABLES
@@ -79,7 +83,23 @@ function cambiar(data, checker) {
                 superficieElement.textContent;
             }
         });
+        casa.forEach((casaElement) => {
+            if (checker) {
+                casaElement.textContent = data[0].projects.casa;
+            } else {
+                casaElement.textContent;
+            }
+        });
+        ampliacion.forEach((ampliacionElement) => {
+            if (checker) {
+                ampliacionElement.textContent = data[0].projects.ampliacion;
+            } else {
+                ampliacionElement.textContent;
+            }
+        });
         baño.textContent = data[0].projects.baño;
+        cabaña.textContent = data[0].projects.cabaña;
+        remodelacion.textContent = data[0].projects.remodelacion;
     } else {
         proyectoNav.textContent;
         servicioNav.textContent;
@@ -91,6 +111,8 @@ function cambiar(data, checker) {
         superficie.textContent;
         baño.textContent;
         etiquetaTitle.textContent;
+        cabaña.textContent;
+        remodelacion.textContent;
     }
 }
 

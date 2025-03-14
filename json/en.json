@@ -10,14 +10,21 @@
             "footer": "All rights reserved"
         },
         "index": {
-            "sloganPrincipal": "We design your dreams, we build your reality."
+            "sloganPrincipal": "We design your dreams, we build your reality.",
+            "masServicios": "See more services!",
+            "masProyectos": "See more projects!",
+            "masContactos": "See more contacts!"
         },
         "projects": {
             "tituloPrincipal": "PROJECTS",
             "ubicacion": "Location: ",
             "superficie": "Area: ",
             "año": "Year: ",
-            "baño": "Bathroom 1 (4.5m) | Bathroom 2 (5m)"
+            "baño": "Bathroom 1 (4.5m) | Bathroom 2 (5m)",
+            "casa": "HOUSE",
+            "cabaña": "CABIN",
+            "ampliacion": "EXTENSION",
+            "remodelacion": "REMODELING"
         },
         "service": {
             "tituloPrincipal": "SERVICES & STUDIO",

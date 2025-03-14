@@ -11,6 +11,9 @@ const contactoNav = document.querySelector('#contacto-nav');
 const eslogan = document.querySelector('#sloganPrincipal');
 const footer = document.querySelector('#copyrights');
 const navItems = document.querySelector('navItems');
+const masServicios = document.querySelector('#masServicios');
+const masProyectos = document.querySelector('#masProyectos');
+const masContactos = document.querySelector('#masContactos');
 
 // VARIABLES
 const URL = './json/en.json';
@@ -58,6 +61,9 @@ function cambiar(data) {
         spanish.textContent = 'ENGLISH';
         eslogan.textContent = data[0].index.sloganPrincipal;
         footer.textContent = data[0].footers.footer;
+        masServicios.textContent = data[0].index.masServicios;
+        masProyectos.textContent = data[0].index.masProyectos;
+        masContactos.textContent = data[0].index.masContactos;
     } else {
         // Cambiar de nuevo al español
         proyectoNav.textContent = 'PROYECTOS';
@@ -66,6 +72,9 @@ function cambiar(data) {
         footer.textContent = 'Todos los derechos reservados.';
         spanish.textContent = 'ESPAÑOL';
         eslogan.textContent = 'Diseñamos tus sueños, construimos tu realidad.';
+        masServicios.textContent = 'ver mas servicios';
+        masProyectos.textContent = 'ver mas proyectos';
+        masContactos.textContent = 'ver mas contactos';
     }
 }
 
