@@ -20,11 +20,11 @@
             "ubicacion": "Location: ",
             "superficie": "Area: ",
             "año": "Year: ",
-            "baño": "Bathroom 1 (4.5m) | Bathroom 2 (5m)",
+            "baños": "Bath. 1(4.5m)|Bath. 2(5m)",
             "casa": "HOUSE",
-            "cabaña": "CABIN",
+            "cabaña": "Vacation Home",
             "ampliacion": "EXTENSION",
-            "remodelacion": "REMODELING"
+            "remodelacion": "REMODELING BATHROOMS"
         },
         "service": {
             "tituloPrincipal": "SERVICES & STUDIO",

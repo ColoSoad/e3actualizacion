@@ -25,6 +25,7 @@ const año = document.querySelectorAll('.año');
 const ubicacion = document.querySelectorAll('.ubicacion');
 const superficie = document.querySelectorAll('.superficie');
 const casa = document.querySelectorAll('.textCasa');
+const baños = document.querySelector('#baños');
 const baño = document.querySelector('#baño');
 const cabaña = document.querySelector('#textoCabaña');
 const ampliacion = document.querySelectorAll('.textoAmpliacion');
@@ -97,7 +98,7 @@ function cambiar(data, checker) {
                 ampliacionElement.textContent;
             }
         });
-        baño.textContent = data[0].projects.baño;
+        baños.textContent = data[0].projects.baños;
         cabaña.textContent = data[0].projects.cabaña;
         remodelacion.textContent = data[0].projects.remodelacion;
     } else {
@@ -109,10 +110,9 @@ function cambiar(data, checker) {
         año.textContent;
         ubicacion.textContent;
         superficie.textContent;
-        baño.textContent;
+        baños.textContent;
         etiquetaTitle.textContent;
         cabaña.textContent;
-        remodelacion.textContent;
     }
 }
 
