@@ -210,10 +210,10 @@ h1 {
     color: #caced1;
 }
 .banner {
-    margin: 80px 0 80px 0;
+    margin: 80px 0 0px 0;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 800px;
     overflow: hidden;
 }
 
@@ -254,8 +254,8 @@ h1 {
     font-size: 30px;
     font-weight: bold;
     color: #b2b2b2;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
-    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
     border: none;
     border-radius: 0px;
     cursor: pointer;
@@ -283,6 +283,11 @@ h1 {
 }
 
 .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(0px);
+}
+
+.btns:hover {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(0px);
 }
@@ -469,7 +474,33 @@ button {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
+    animation: latir 1s infinite;
 }
+
+.bajar {
+    display: none;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    text-align: center;
+    animation: latir 1s infinite;
+}
+
+@keyframes latir {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .whatsapp {
     color: #4bec67;
     height: 40px;
@@ -483,13 +514,16 @@ button {
     font-size: 40px;
 }
 .whatsapp:hover {
-    color: #fff;
+    color: #000;
 }
 
 .subir:hover {
-    color: #fff;
+    color: #000;
 }
 
+.bajar:hover {
+    color: #000;
+}
 h2 {
     padding: 30px;
     color: #fff;
@@ -966,9 +1000,35 @@ form {
 }
 
 .btn {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) !important;
     text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 5px;
+    font-weight: bold !important;
 }
+
+.btns {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #b2b2b2;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
+    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 5px;
+    font-weight: bold !important;
+}
+
 .h2arqui {
     margin: 0%;
     letter-spacing: 0.1em;
@@ -1644,6 +1704,44 @@ form {
     .derAbajo {
         order: 9;
     }
+
+    .inicioMain {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        margin: 0;
+        position: static;
+        height: 840px;
+        width: 82%;
+        border: #222f3a 1px solid;
+    }
+
+    .bannerVideo {
+        position: absolute;
+        object-fit: contain;
+    }
+
+    .logoCarousel {
+        margin-bottom: 60px;
+        width: 82%;
+    }
+
+    .videosMainIndex {
+        width: 82%;
+    }
+    .content2 {
+        width: 82%;
+    }
+
+    .btns {
+        display: inline-block;
+        width: 122%;
+    }
 }
 @media only screen and (min-width: 1025px) and (max-width: 3000px) {
     .txtIzq {
@@ -2020,10 +2118,131 @@ form {
         margin-left: auto;
         margin-right: auto;
     }
-    .logoService,
-    .logoIndex {
+    .logoService {
+        margin: 25px;
         height: 500px;
         width: 500px;
+    }
+    .logoIndex {
+        grid-column: 3/4;
+        grid-row: 1/4;
+        margin: 25px;
+        height: 500px;
+        width: 500px;
+    }
+    .inicioMain {
+        display: grid;
+        margin: 0px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        gap: 0px;
+    }
+
+    .sloganIndex {
+        height: 20px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .slogan {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        margin: 0%;
+        font-size: 36px;
+        color: #c7c8c9;
+        letter-spacing: 0.2em;
+        padding: 0;
+    }
+
+    .bajar {
+        display: block;
+        bottom: 40px;
+        left: 45%;
+        text-align: center;
+        font-size: 36px;
+        animation: latir 1s infinite;
+    }
+
+    @keyframes latir {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .logoCarousel {
+        margin: 0 50px 0 -200px;
+        width: 120%;
+        height: 900px;
+        margin-top: 80px;
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+    .banner {
+        width: 75%;
+        padding: 0%;
+        height: 900px;
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .bannerVideo {
+        margin-top: 80px;
+        margin-left: 0%;
+        justify-self: start;
+        height: 650px;
+        padding: 0%;
+        object-fit: contain;
+    }
+
+    .miFooter {
+        margin-top: 800px;
+    }
+
+    .logoSlider1 {
+        height: 295px;
+        margin-top: 85px;
+    }
+
+    .logoSlider2 {
+        height: 295px;
+        margin-top: 0px;
+    }
+
+    .logoSliders {
+        height: 295px;
+        width: 100%;
+    }
+    /* 
+    .logoSlider2 {
+        height: 150px;
+    }
+
+    .logoSliders {
+        height: 150px;
+        width: 100%;
+    }
+        .content2 {
+        position: static;
+        width: 80%;
+        height: 1%;
+    }
+
+    .btns {
+        display: inline-block;
+        width: 122%;
+    } */
+
+    .videosMainIndex {
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 }
 @media only screen and (min-width: 1220px) and (max-width: 3000px) {
