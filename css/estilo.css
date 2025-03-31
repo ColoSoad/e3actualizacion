@@ -228,20 +228,10 @@ h1 {
     filter: brightness(1);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-/* Contenedor del botón */
 .content {
-    width: 300px;
+    width: 100%;
     position: absolute;
-    top: 26%;
+    top: 220px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -253,7 +243,7 @@ h1 {
     padding: 12px 24px;
     font-size: 30px;
     font-weight: bold;
-    color: #b2b2b2;
+    color: #fff;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
     border: none;
@@ -273,7 +263,7 @@ h1 {
     padding: 12px 24px;
     font-size: 30px;
     font-weight: bold;
-    color: #b2b2b2;
+    color: #fff;
     background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
     backdrop-filter: blur(2px); /* Efecto de desenfoque */
     border: none;
@@ -288,7 +278,7 @@ h1 {
 }
 
 .btns:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: #000;
     backdrop-filter: blur(0px);
 }
 
@@ -487,6 +477,34 @@ button {
     left: 45%;
     text-align: center;
     animation: latir 1s infinite;
+}
+
+.bajar2 {
+    /* display: none; */
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: -700px;
+    left: 45%;
+    text-align: center;
+    animation: latir 1s infinite;
+}
+
+.bajar3 {
+    /* display: none; */
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: -1400px;
+    left: 45%;
+    text-align: center;
+    animation: latir 1s infinite;
+}
+
+.containerCarousel {
+    margin-bottom: 200px;
 }
 
 @keyframes latir {
