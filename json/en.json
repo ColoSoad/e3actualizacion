@@ -13,7 +13,8 @@
             "sloganPrincipal": "We design your dreams, we build your reality.",
             "masServicios": "See more services!",
             "masProyectos": "See more projects!",
-            "masContactos": "See more contacts!"
+            "masContactos": "See more contacts!",
+            "video1": "./multimedia/index1English.mp4"
         },
         "projects": {
             "tituloPrincipal": "PROJECTS",

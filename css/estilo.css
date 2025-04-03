@@ -56,26 +56,6 @@ body {
     box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
 }
 
-.videosMainIndex {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
-}
-
-.videoIndex2 {
-    height: auto;
-    width: 50%;
-    object-fit: cover;
-}
-
-.videoIndex3 {
-    height: auto;
-    width: 50%;
-    object-fit: cover;
-}
-
 img {
     height: 35px;
 }
@@ -209,6 +189,7 @@ h1 {
     font-size: 18px;
     color: #caced1;
 }
+
 .banner {
     margin: 80px 0 0px 0;
     position: relative;
@@ -231,30 +212,8 @@ h1 {
 .content {
     width: 100%;
     position: absolute;
-    top: 220px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 165px;
     text-align: center;
-}
-
-.btn2 {
-    width: 100%;
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(2px);
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.btn2:hover {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(0px);
 }
 
 .btn {
@@ -277,7 +236,29 @@ h1 {
     backdrop-filter: blur(0px);
 }
 
+.videosMainIndex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
+}
+
+.videoIndex2 {
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+}
+
+.videoIndex3 {
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+}
+
+.btn:hover,
 .btns:hover {
+    color: #fff;
     background: #000;
     backdrop-filter: blur(0px);
 }
@@ -531,17 +512,15 @@ button {
     border-radius: 50%;
     font-size: 40px;
 }
-.whatsapp:hover {
+
+.subir:hover,
+.whatsapp:hover,
+.bajar:hover,
+.bajar2:hover,
+.bajar3:hover {
     color: #000;
 }
 
-.subir:hover {
-    color: #000;
-}
-
-.bajar:hover {
-    color: #000;
-}
 h2 {
     padding: 30px;
     color: #fff;

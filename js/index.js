@@ -14,6 +14,7 @@ const navItems = document.querySelector('navItems');
 const masServicios = document.querySelector('#masServicios');
 const masProyectos = document.querySelector('#masProyectos');
 const masContactos = document.querySelector('#masContactos');
+const video1 = document.querySelector('#video1');
 
 // VARIABLES
 const URL = './json/en.json';
@@ -64,6 +65,7 @@ function cambiar(data) {
         masServicios.textContent = data[0].index.masServicios;
         masProyectos.textContent = data[0].index.masProyectos;
         masContactos.textContent = data[0].index.masContactos;
+        video1.src = data[0].index.video1;
     } else {
         // Cambiar de nuevo al español
         proyectoNav.textContent = 'PROYECTOS';
@@ -75,6 +77,7 @@ function cambiar(data) {
         masServicios.textContent = 'ver mas servicios';
         masProyectos.textContent = 'ver mas proyectos';
         masContactos.textContent = 'ver mas contactos';
+        video1.src = './multimedia/index1.mp4';
     }
 }
 
