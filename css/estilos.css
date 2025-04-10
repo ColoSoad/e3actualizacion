@@ -218,13 +218,136 @@ body {
 
 /* ////////////////////////////// */
 
-* {
+.inicioMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    padding: 0;
+}
+
+.articulos {
+    height: 500px;
+    margin-bottom: 300px;
+}
+
+.articulosfinal {
+    height: 500px;
+    margin-bottom: 0px;
+}
+
+.banners {
+    margin-top: 55px;
+}
+
+.contents {
+    background: rgb(0, 0, 0, 0.5);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.contents:hover {
+    background: rgb(47, 66, 93, 0.5);
+}
+.btnas {
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btnas:hover {
+    color: #000;
+}
+
+.bannerVideos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    outline: none;
+}
+
+.bajars {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    height: 100px;
+}
+
+.bajars2 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    top: 800px;
+}
+
+.bajars3 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    top: 1600px;
+}
+
+.bajars i,
+.bajars2 i,
+.bajars3 i {
+    color: #ffffff;
+}
+
+.logoCarousels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.logoSlider1s {
+    width: 100%;
+    height: 50%;
+}
+
+.logoSlider2s {
+    width: 100%;
+    height: 50%;
+}
+
+.logoSliders {
+    width: 100%;
+    height: 225px;
+}
+
+.videosMainIndexs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.videoIndex2,
+.videoIndex3 {
+    height: 100%;
+    width: 50%;
+}
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Contenedor principal */
+
 .banner {
     position: relative;
     margin-left: auto;
@@ -234,7 +357,7 @@ body {
     overflow: hidden;
 }
 
-/* Video de fondo */
+
 .banner video {
     position: absolute;
     top: 0;
@@ -246,7 +369,7 @@ body {
     filter: brightness();
 }
 
-/* Capa oscura para mejorar la visibilidad del texto */
+
 .overlay {
     position: absolute;
     top: 0;
@@ -256,7 +379,7 @@ body {
     background: rgba(0, 0, 0, 0.3);
 }
 
-/* Contenedor del botón */
+
 .content {
     position: absolute;
     top: 26%;
@@ -265,15 +388,15 @@ body {
     text-align: center;
 }
 
-/* Botón con efecto blur */
+
 .btn {
     display: inline-block;
     padding: 12px 24px;
     font-size: 30px;
     font-weight: bold;
     color: white;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
-    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(2px); 
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -283,4 +406,4 @@ body {
 .btn:hover {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(0px);
-}
+} */

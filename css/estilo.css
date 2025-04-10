@@ -190,7 +190,7 @@ h1 {
     color: #caced1;
 }
 
-.bannerContainer {
+/* .bannerContainer {
     margin: 120px 0 220px 0;
 }
 
@@ -223,8 +223,8 @@ h1 {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparente */
-    backdrop-filter: blur(2px); /* Efecto de desenfoque */
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(2px); 
     border: none;
     border-radius: 0px;
     cursor: pointer;
@@ -274,7 +274,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     margin-top: 150px;
-}
+} */
 
 .sloganIndex {
     display: flex;
@@ -318,7 +318,7 @@ h1 {
     background-position: center;
 }
 
-.logoSliders {
+/* .logoSliders {
     height: 200px;
     object-fit: cover;
     width: 100%;
@@ -337,7 +337,7 @@ h1 {
 }
 .logoCarousel {
     margin: 40px 0 120px 0;
-}
+} */
 
 dialog {
     border: none; /* Elimina el borde por defecto */
@@ -1375,6 +1375,24 @@ form {
     .slidcar {
         height: 450px;
     }
+
+    .bajar2 {
+        bottom: -720px;
+        left: 45%;
+    }
+
+    .bajar3 {
+        bottom: -1450px;
+        left: 45%;
+    }
+
+    .bannerContainer {
+        margin: 60px 0 120px 0;
+    }
+
+    .containerVideoIndex {
+        margin-top: 0px;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 950px) and (min-height: 100px) and (max-height: 350px) {
@@ -1393,6 +1411,14 @@ form {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    .item2 {
+        view-timeline-name: none;
+        view-timeline-axis: 0;
+        animation-timeline: none;
+        animation-name: none;
+        animation-range: 0;
+        animation-fill-mode: none;
+    }
     .modals {
         width: 768px;
         padding: 0;
@@ -2171,6 +2197,11 @@ form {
         animation: latir 1s infinite;
     }
 
+    .bajar2,
+    .bajar3 {
+        display: none;
+    }
+
     @keyframes latir {
         0% {
             transform: scale(1);
@@ -2184,7 +2215,7 @@ form {
     }
 
     .bannerContainer {
-        margin: 0%;
+        margin: 106px 0 0 0;
         padding: 0%;
         width: 50%;
         height: 600px;
@@ -2200,7 +2231,7 @@ form {
         margin: 0;
         height: 100%;
         padding: 0%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .containerCarousel {
