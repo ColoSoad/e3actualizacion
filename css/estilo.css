@@ -190,92 +190,6 @@ h1 {
     color: #caced1;
 }
 
-/* .bannerContainer {
-    margin: 120px 0 220px 0;
-}
-
-.banner {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.bannerVideo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    filter: contrast(2);
-    filter: brightness(1);
-}
-
-.content {
-    width: 100%;
-    position: absolute;
-    top: 153px;
-    text-align: center;
-}
-
-.btn {
-    width: 100%;
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(2px); 
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(0px);
-}
-
-.videosMainIndex {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
-}
-
-.videoIndex2 {
-    height: auto;
-    width: 50%;
-    object-fit: cover;
-    filter: contrast(2);
-    filter: brightness(1);
-}
-
-.videoIndex3 {
-    height: auto;
-    width: 50%;
-    object-fit: cover;
-    filter: contrast(2);
-    filter: brightness(1);
-}
-
-.btn:hover,
-.btns:hover {
-    color: #fff;
-    background: #000;
-    backdrop-filter: blur(0px);
-}
-
-.inicioMain {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 150px;
-} */
-
 .sloganIndex {
     display: flex;
     justify-content: center;
@@ -317,27 +231,6 @@ h1 {
     background-size: cover;
     background-position: center;
 }
-
-/* .logoSliders {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-    filter: saturate(3);
-    filter: brightness(1.15);
-    filter: contrast(1.15);
-}
-
-.logoSlider1,
-.logoSlider2 {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-    margin: 0 auto 0 auto;
-    box-shadow: 0px 0px 170px 144px rgba(76, 112, 219, 0.2);
-}
-.logoCarousel {
-    margin: 40px 0 120px 0;
-} */
 
 dialog {
     border: none; /* Elimina el borde por defecto */
@@ -451,46 +344,6 @@ button {
     line-height: 40px;
     border-radius: 50%;
     animation: latir 1s infinite;
-}
-
-.bajar {
-    /* display: none; */
-    height: 40px;
-    width: 40px;
-    color: #fff;
-    position: absolute;
-    bottom: 40px;
-    left: 45%;
-    text-align: center;
-    animation: latir 1s infinite;
-}
-
-.bajar2 {
-    /* display: none; */
-    height: 40px;
-    width: 40px;
-    color: #fff;
-    position: absolute;
-    bottom: -700px;
-    left: 45%;
-    text-align: center;
-    animation: latir 1s infinite;
-}
-
-.bajar3 {
-    /* display: none; */
-    height: 40px;
-    width: 40px;
-    color: #fff;
-    position: absolute;
-    bottom: -1500px;
-    left: 45%;
-    text-align: center;
-    animation: latir 1s infinite;
-}
-
-.containerCarousel {
-    margin-bottom: 200px;
 }
 
 @keyframes latir {
