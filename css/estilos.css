@@ -222,7 +222,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
     padding: 0;
 }
 
@@ -265,7 +264,7 @@ body {
 }
 
 .banners {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .bannerVideos {
@@ -277,8 +276,9 @@ body {
 }
 
 .bajars {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 47%;
+    right: 50%;
     text-decoration: none;
     align-items: center;
     height: 100px;
@@ -286,24 +286,24 @@ body {
 }
 
 .bajars2 {
-    display: flex;
-    justify-content: center;
+    left: 47%;
+    right: 50%;
     text-decoration: none;
     align-items: center;
     height: 100px;
     position: relative;
-    top: 800px;
+    top: 700px;
     animation: latir 1s infinite;
 }
 
 .bajars3 {
-    display: flex;
-    justify-content: center;
+    left: 40%;
+    right: 50%;
     text-decoration: none;
     align-items: center;
     height: 100px;
     position: relative;
-    top: 1550px;
+    top: 1500px;
     animation: latir 1s infinite;
 }
 
@@ -318,7 +318,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 500px;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .logoSlider1s {
@@ -337,7 +337,7 @@ body {
 }
 
 .containerVideoIndexs {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .videosMainIndexs {

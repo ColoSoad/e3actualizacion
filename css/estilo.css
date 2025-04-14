@@ -456,11 +456,12 @@ h3 {
 .textoPrincipalService,
 .textos,
 .parrafoService,
-.banner,
+.banners,
 .overlay,
 .logoSlider1,
 .videosMainIndex,
-.videosServicio {
+.videosServicio,
+.logoCarousels {
     view-timeline-name: --items;
     view-timeline-axis: block;
     animation-timeline: --items;
