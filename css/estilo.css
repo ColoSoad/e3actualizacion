@@ -1031,7 +1031,6 @@ form {
     text-decoration: none;
     align-items: center;
     height: 100px;
-    animation: latir 1s infinite;
 }
 
 .bajars2 {
@@ -1042,7 +1041,6 @@ form {
     height: 100px;
     position: relative;
     top: 700px;
-    animation: latir 1s infinite;
 }
 
 .bajars3 {
@@ -1053,13 +1051,13 @@ form {
     height: 100px;
     position: relative;
     top: 1500px;
-    animation: latir 1s infinite;
 }
 
 .bajars i,
 .bajars2 i,
 .bajars3 i {
     color: #ffffff;
+    animation: latir 1s infinite;
 }
 
 .logoCarousels {
@@ -1509,22 +1507,6 @@ form {
         background-position: center;
     }
 
-    .logoSliders1 {
-        padding: 0 0 0px 0;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .logoSliders2 {
-        padding: 0 0 0px 0;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        height: 300px;
-        object-fit: cover;
-    }
-
     .proyecto {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(9, 200px);
@@ -1744,17 +1726,45 @@ form {
     .derAbajo {
         order: 9;
     }
+    /* ///////////////////////////////////////////////////////////////// */
 
-    /* .inicioMains {
+    .banners {
+        padding-top: 0px;
+    }
+
+    .bajars i,
+    .bajars2 i,
+    .bajars3 i {
+        display: none;
+    }
+
+    .logoCarousels {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        padding-top: 0px;
+    }
+    .inicioMains {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 250px;
     }
     .articulos,
     .articulosfinal {
-        width: 480px;
-    } */
+        width: 580px;
+    }
+
+    .containerVideoIndexs {
+        padding-top: 0px;
+    }
+    .containerCarousels {
+        height: 500px;
+        margin: 150px 0 150px 0;
+        padding: 0%;
+    }
 }
 @media only screen and (min-width: 1025px) and (max-width: 3000px) {
     .txtIzq {
@@ -2156,8 +2166,8 @@ form {
         animation: latir 1s infinite;
     }
 
-    .bajar2,
-    .bajar3 {
+    .bajars2,
+    .bajars3 {
         display: none;
     }
 
@@ -2172,83 +2182,48 @@ form {
             transform: scale(1);
         }
     }
-
-    .bannerContainer {
-        margin: 106px 0 0 0;
-        padding: 0%;
-        width: 50%;
-        height: 600px;
-    }
-
-    .banner {
-        width: 100%;
-        padding: 0%;
-        height: 100%;
-    }
-
-    .bannerVideo {
-        margin: 0;
-        height: 100%;
-        padding: 0%;
-        object-fit: cover;
-    }
-
-    .containerCarousel {
-        margin: 0%;
-        padding: 0;
-        width: 50%;
-        height: 600px;
-    }
-
-    .logoCarousel {
-        padding: 40px 40px 0 0;
-    }
-
-    .logoSlider1 {
-        height: 250px;
-    }
-
-    .logoSlider2 {
-        height: 250px;
-    }
-
-    .logoSliders {
-        height: 295px;
-        width: 100%;
-    }
-
-    .content {
-        width: 79.5%;
-    }
-
-    .content2 {
-        width: cover;
-    }
-
-    .btn {
-        color: #fff;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .containerVideoIndex {
-        margin-top: 200px;
-    }
-
-    .videosMainIndex {
-        height: 600px;
-        padding: 50px;
-    }
-
     .miFooter {
         margin-top: 800px;
     }
 
-    .btns {
-        font-weight: 900;
-        color: #000;
-        display: inline-block;
+    /* ///////////////////////////////////////////////////////////////// */
+
+    .banners {
+        padding-top: 0px;
+    }
+
+    .bajars i,
+    .bajars2 i,
+    .bajars3 i {
+        display: none;
+    }
+
+    .logoCarousels {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        height: 500px;
+        padding-top: 0px;
+    }
+    .inicioMains {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 250px;
+    }
+    .articulos,
+    .articulosfinal {
+        width: 580px;
+    }
+
+    .containerVideoIndexs {
+        padding-top: 0px;
+    }
+    .containerCarousels {
+        height: 500px;
+        margin: 150px 0 150px 0;
+        padding: 0%;
     }
 }
 @media only screen and (min-width: 1220px) and (max-width: 3000px) {
@@ -2257,5 +2232,48 @@ form {
     }
     .informacionPersonal {
         height: 100%;
+    }
+
+    /* ///////////////////////////////////////////////////////////////// */
+
+    .banners {
+        padding-top: 0px;
+    }
+
+    .bajars i,
+    .bajars2 i,
+    .bajars3 i {
+        display: none;
+    }
+
+    .logoCarousels {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0px;
+    }
+    .inicioMains {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 250px;
+    }
+    .articulos,
+    .articulosfinal {
+        width: 580px;
+    }
+
+    .containerVideoIndexs {
+        padding-top: 0px;
+    }
+    .containerCarousels {
+        height: 500px;
+        margin: 150px 0 150px 0;
+        padding: 0%;
+    }
+
+    .bajars i {
+        display: block;
     }
 }
