@@ -972,21 +972,68 @@ form {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 0;
+    justify-content: baseline !important;
 }
 
-.articulos {
-    margin-top: 0px;
-    height: 800px;
-    margin-bottom: 0px;
+/* .articulos {
+    height: 500px;
+    align-self: center;
+    border-radius: 0% 20% 15% 0%;
+    box-shadow: 0px 0px 170px 144px inset #4c70db33;
+    background-color: #000;
+    border: #222f3a solid 1px;
+    margin: 0%;
+    padding: 0px 0 0px;
+}
+
+#article2 {
+    height: 500px;
+    margin: 150px 0 150px 0;
+    padding: 0px;
+    justify-self: start;
 }
 
 .articulosfinal {
     height: 500px;
-    margin-bottom: 0px;
+    align-self: center;
+    border-radius: 0% 20% 15% 0%;
+    box-shadow: 0px 0px 170px 144px inset #4c70db33;
+    background-color: #000;
+    border: #222f3a solid 1px;
+    margin: 0%;
+    padding-top: 0px;
+} */
+.articulos {
+    height: 800px;
+    align-self: center;
+    border-radius: 0% 20% 15% 0%;
+    box-shadow: 0px 0px 170px 144px inset #4c70db33;
+    background-color: #000;
+    border: #222f3a solid 1px;
+    margin: 0%;
+    padding: 110px 0 110px;
+}
+
+#article2 {
+    height: 800px;
+    margin: 150px 0 150px 0;
+    padding: 110px 0 110px;
+    justify-self: start;
+}
+
+.articulosfinal {
+    height: 800px;
+    align-self: center;
+    border-radius: 0% 20% 15% 0%;
+    box-shadow: 0px 0px 170px 144px inset #4c70db33;
+    background-color: #000;
+    border: #222f3a solid 1px;
+    margin: 0%;
+    padding-top: 110px;
 }
 
 .contents {
-    background: rgb(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0, 1);
     height: 50px;
     width: 100%;
     text-align: center;
@@ -995,6 +1042,7 @@ form {
     align-items: center;
     transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
     margin-top: 0px;
+    border-radius: 0 55px 0% 0;
 }
 
 .contents:hover {
@@ -1026,7 +1074,7 @@ form {
 
 .bajars {
     position: absolute;
-    left: 47%;
+    left: 50%;
     right: 50%;
     text-decoration: none;
     align-items: center;
@@ -1765,6 +1813,10 @@ form {
         margin: 150px 0 150px 0;
         padding: 0%;
     }
+
+    .miFooter {
+        margin-top: 200px;
+    }
 }
 @media only screen and (min-width: 1025px) and (max-width: 3000px) {
     .txtIzq {
@@ -2183,7 +2235,7 @@ form {
         }
     }
     .miFooter {
-        margin-top: 800px;
+        margin-top: 200px;
     }
 
     /* ///////////////////////////////////////////////////////////////// */
@@ -2262,6 +2314,10 @@ form {
     .articulos,
     .articulosfinal {
         width: 580px;
+    }
+
+    .articulosfinal {
+        margin-bottom: 0%;
     }
 
     .containerVideoIndexs {
