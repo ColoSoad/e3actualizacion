@@ -14,7 +14,9 @@
             "masServicios": "See more services!",
             "masProyectos": "See more projects!",
             "masContactos": "See more contacts!",
-            "video1": "./multimedia/index1English.mp4"
+            "video1": "./multimedia/index1English.mp4",
+            "video2": "./multimedia/index2English.mp4",
+            "video3": "./multimedia/index3English.mp4"
         },
         "projects": {
             "tituloPrincipal": "PROJECTS",
