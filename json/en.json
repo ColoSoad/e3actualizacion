@@ -41,7 +41,9 @@
             "tituloRenovacion": "Renovating and modernizing",
             "parrafoRenovacion": "Renovating and modernizing spaces improves functionality, aesthetics, and comfort, increasing the property's appraisal value. A strategic update ensures greater future profitability, attracting buyers or tenants and adapting the property to new trends and market needs.",
             "tituloElegirnos": "Why trust us?",
-            "parrafoElegirnos": "Choosing our services means trusting a team committed to excellence. We stand out for our quality, precision, and reliability, ensuring customized solutions that optimize each project and guarantee functional, aesthetic, and durable spaces, always exceeding our clients' expectations."
+            "parrafoElegirnos": "Choosing our services means trusting a team committed to excellence. We stand out for our quality, precision, and reliability, ensuring customized solutions that optimize each project and guarantee functional, aesthetic, and durable spaces, always exceeding our clients' expectations.",
+            "video1English": "../multimedia/videos/1English.mp4",
+            "video2English": "../multimedia/videos/2English.mp4"
         },
         "aboutUs": {
             "tituloPrincipal": "ABOUT US",
