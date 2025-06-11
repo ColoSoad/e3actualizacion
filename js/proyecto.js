@@ -31,6 +31,7 @@ const cabaña = document.querySelector('#textoCabaña');
 const ampliacion = document.querySelectorAll('.textoAmpliacion');
 const remodelacion = document.querySelector('#textoRemodelacion');
 const etiquetaTitle = document.querySelector('#title');
+const cabañaSlEnglish = document.querySelector('#cabañaSlEnglish');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -63,6 +64,7 @@ function cambiar(data, checker) {
         footer.textContent = data[0].footers.footer;
         tituloPrincipal.textContent = data[0].projects.tituloPrincipal;
         etiquetaTitle.textContent = data[0].title.proyecto;
+        cabañaSlEnglish.src = data[0].projects.cabañaSl;
         año.forEach((añoElement) => {
             if (checker) {
                 añoElement.textContent = data[0].projects.año;
@@ -113,6 +115,7 @@ function cambiar(data, checker) {
         baños.textContent;
         etiquetaTitle.textContent;
         cabaña.textContent;
+        cabañaSlEnglish.src;
     }
 }
 

@@ -27,7 +27,8 @@
             "casa": "HOUSE",
             "cabaña": "Vacation Home",
             "ampliacion": "EXTENSION",
-            "remodelacion": "REMODELING BATHROOMS"
+            "remodelacion": "REMODELING BATHROOMS",
+            "cabañaSl": "../multimedia/img/cabañaSL/cabañaSL1English.jpg"
         },
         "service": {
             "tituloPrincipal": "SERVICES & STUDIO",
