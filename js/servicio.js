@@ -21,6 +21,9 @@ const tituloElegirnos = document.querySelector('#tituloElegirnos');
 const parrafoElegirnos = document.querySelector('#parrafoElegirnos');
 const video1English = document.querySelector('#videoUnoService');
 const video2English = document.querySelector('#videoDosService');
+const video3English = document.querySelector('#videoTresService');
+const video4English = document.querySelector('#videoCuatroService');
+const video5English = document.querySelector('#videoCincoService');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -66,6 +69,9 @@ function cambiar(data, checker) {
         parrafoElegirnos.textContent = data[0].service.parrafoElegirnos;
         video1English.src = data[0].service.video1English;
         video2English.src = data[0].service.video2English;
+        video3English.src = data[0].service.video3English;
+        video4English.src = data[0].service.video4English;
+        video5English.src = data[0].service.video5English;
     } else {
         etiquetaTitle.textContent;
         proyectoNav.textContent;
@@ -86,6 +92,9 @@ function cambiar(data, checker) {
         parrafoElegirnos.textContent;
         video1English.src;
         video2English.src;
+        video3English.src;
+        video4English.src;
+        video5English.src;
     }
 }
 

@@ -43,7 +43,10 @@
             "tituloElegirnos": "Why trust us?",
             "parrafoElegirnos": "Choosing our services means trusting a team committed to excellence. We stand out for our quality, precision, and reliability, ensuring customized solutions that optimize each project and guarantee functional, aesthetic, and durable spaces, always exceeding our clients' expectations.",
             "video1English": "../multimedia/videos/1English.mp4",
-            "video2English": "../multimedia/videos/2English.mp4"
+            "video2English": "../multimedia/videos/2English.mp4",
+            "video3English": "../multimedia/videos/3English.mp4",
+            "video4English": "../multimedia/videos/4English.mp4",
+            "video5English": "../multimedia/videos/5English.mp4"
         },
         "aboutUs": {
             "tituloPrincipal": "ABOUT US",
