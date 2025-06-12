@@ -32,7 +32,11 @@
             "ampliacionCL": "../multimedia/img/ampliacionCL/ampliacionCL1English.jpg",
             "casaLgEnglish": "../multimedia/img/casaLG/casaLG1English.jpg",
             "casaKgEnglish": "../multimedia/img/casaKG/casaKG1English.jpg",
-            "remodelacionBaños": "../multimedia/img/Baños/baños1English.jpg"
+            "remodelacionBaños": "../multimedia/img/Baños/baños1English.jpg",
+            "casaJgEnglish": "../multimedia/img/casaJG/casaJG1English.jpg",
+            "ampliacionMR": "../multimedia/img/ampliacionMR/ampliacionMR1English.jpg",
+            "casaJFEnglish": "../multimedia/img/casaJF/casaJF1English.jpg",
+            "casaSLEnglish": "../multimedia/img/casaSL/casaSL1English.jpg"
         },
         "service": {
             "tituloPrincipal": "SERVICES & STUDIO",

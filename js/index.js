@@ -95,7 +95,7 @@ lenguajeInput.addEventListener('change', () => {
 });
 
 facebook.addEventListener('click', (e) => {
-    window.open('https://www.facebook.com/profile.php?id=100071002556214', '_blank');
+    // window.open('https://www.facebook.com/profile.php?id=100071002556214', '_blank');
 });
 
 instagram.addEventListener('click', (e) => {

@@ -35,7 +35,11 @@ const cabañaSlEnglish = document.querySelector('#cabañaSlEnglish');
 const ampliacionCl = document.querySelector('#ampliacionClEnglish');
 const casaLgEnglish = document.querySelector('#casaLgEnglish');
 const casaKgEnglish = document.querySelector('#casaKgEnglish');
+const casaJgEnglish = document.querySelector('#casaJgEnglish');
 const remodelacionBañosEnglish = document.querySelector('#remodelacionBañosEnglish');
+const ampliacionMr = document.querySelector('#ampliacionMrEnglish');
+const casaJFEnglish = document.querySelector('#casaJFEnglish');
+const casaSLEnglish = document.querySelector('#casaSLEnglish');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -73,6 +77,10 @@ function cambiar(data, checker) {
         casaLgEnglish.src = data[0].projects.casaLgEnglish;
         casaKgEnglish.src = data[0].projects.casaKgEnglish;
         remodelacionBañosEnglish.src = data[0].projects.remodelacionBaños;
+        casaJgEnglish.src = data[0].projects.casaJgEnglish;
+        ampliacionMr.src = data[0].projects.ampliacionMR;
+        casaJFEnglish.src = data[0].projects.casaJFEnglish;
+        casaSLEnglish.src = data[0].projects.casaSLEnglish;
         año.forEach((añoElement) => {
             if (checker) {
                 añoElement.textContent = data[0].projects.año;
@@ -128,6 +136,10 @@ function cambiar(data, checker) {
         casaLgEnglish.src;
         casaKgEnglish.src;
         remodelacionBañosEnglish.src;
+        casaJgEnglish.src;
+        ampliacionMr.src;
+        casaSLEnglish.src;
+        casaJFEnglish.src;
     }
 }
 
@@ -138,7 +150,7 @@ function recuperarInfoDePreferences() {
 }
 
 facebook.addEventListener('click', (e) => {
-    window.open('https://www.facebook.com/profile.php?id=100071002556214', '_blank');
+    // window.open('https://www.facebook.com/profile.php?id=100071002556214', '_blank');
 });
 
 instagram.addEventListener('click', (e) => {
