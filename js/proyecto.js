@@ -32,6 +32,10 @@ const ampliacion = document.querySelectorAll('.textoAmpliacion');
 const remodelacion = document.querySelector('#textoRemodelacion');
 const etiquetaTitle = document.querySelector('#title');
 const cabañaSlEnglish = document.querySelector('#cabañaSlEnglish');
+const ampliacionCl = document.querySelector('#ampliacionClEnglish');
+const casaLgEnglish = document.querySelector('#casaLgEnglish');
+const casaKgEnglish = document.querySelector('#casaKgEnglish');
+const remodelacionBañosEnglish = document.querySelector('#remodelacionBañosEnglish');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -65,6 +69,10 @@ function cambiar(data, checker) {
         tituloPrincipal.textContent = data[0].projects.tituloPrincipal;
         etiquetaTitle.textContent = data[0].title.proyecto;
         cabañaSlEnglish.src = data[0].projects.cabañaSl;
+        ampliacionCl.src = data[0].projects.ampliacionCL;
+        casaLgEnglish.src = data[0].projects.casaLgEnglish;
+        casaKgEnglish.src = data[0].projects.casaKgEnglish;
+        remodelacionBañosEnglish.src = data[0].projects.remodelacionBaños;
         año.forEach((añoElement) => {
             if (checker) {
                 añoElement.textContent = data[0].projects.año;
@@ -116,6 +124,10 @@ function cambiar(data, checker) {
         etiquetaTitle.textContent;
         cabaña.textContent;
         cabañaSlEnglish.src;
+        ampliacionCl.src;
+        casaLgEnglish.src;
+        casaKgEnglish.src;
+        remodelacionBañosEnglish.src;
     }
 }
 
