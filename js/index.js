@@ -17,6 +17,9 @@ const masContactos = document.querySelector('#masContactos');
 const video1 = document.querySelector('#video1');
 const video2 = document.querySelector('#video2');
 const video3 = document.querySelector('#video3');
+const loader = document.getElementById('loader');
+const video = document.getElementById('video1');
+const contenidoMains = document.getElementById('contenidoMains');
 
 // VARIABLES
 const URL = './json/en.json';
@@ -102,6 +105,32 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
+async function esperarCargaVideos(video) {
+    return new Promise((resolve) => {
+        const interval = setInterval(() => {
+            if (video.buffered.length > 0 && video.duration) {
+                let porcentajeCargado = (video.buffered.end(0) / video.duration) * 100;
+
+                if (porcentajeCargado >= 50) {
+                    clearInterval(interval); // Detener el intervalo
+                    resolve(); // Continuar con la ejecución
+                }
+            }
+        }, 100);
+    });
+}
+
+async function inicializarPagina() {
+    // Espera a que el video cargue al menos al 50%
+    await esperarCargaVideos(video);
+    // Ocultar el loader
+    loader.style.display = 'none';
+
+    // Mostrar el contenido con una transición suave
+    contenidoMains.style.opacity = '1';
+}
+
+inicializarPagina();
 cargarEstadoDeLenguaje();
 guardarInfoDeLenguaje();
 obtener();
