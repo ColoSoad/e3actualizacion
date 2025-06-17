@@ -20,6 +20,7 @@ const video3 = document.querySelector('#video3');
 const loader = document.getElementById('loader');
 const video = document.getElementById('video1');
 const contenidoMains = document.getElementById('contenidoMains');
+const contenedor = document.getElementById('idiomaContent');
 
 // VARIABLES
 const URL = './json/en.json';
@@ -58,8 +59,8 @@ function cargarEstadoDeLenguaje() {
 }
 
 function cambiar(data) {
-    const contenedor = document.getElementById('idiomaContent');
     contenedor.classList.add('hidden');
+    loader.style.display = 'block';
     setTimeout(() => {
         if (lenguajeInput.checked) {
             proyectoNav.textContent = data[0].navbar.liNavProyecto;
@@ -90,6 +91,7 @@ function cambiar(data) {
         }
 
         contenedor.classList.remove('hidden');
+        loader.style.display = 'none';
     }, 500);
 }
 
