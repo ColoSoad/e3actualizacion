@@ -57,37 +57,40 @@ function cargarEstadoDeLenguaje() {
     }
 }
 
-// Función para cambiar el idioma del párrafo
 function cambiar(data) {
-    if (lenguajeInput.checked) {
-        // Cambiar al idioma del JSON
-        proyectoNav.textContent = data[0].navbar.liNavProyecto;
-        servicioNav.textContent = data[0].navbar.liNavServicio;
-        contactoNav.textContent = data[0].navbar.liNavContacto;
-        spanish.textContent = 'ENGLISH';
-        eslogan.textContent = data[0].index.sloganPrincipal;
-        footer.textContent = data[0].footers.footer;
-        masServicios.textContent = data[0].index.masServicios;
-        masProyectos.textContent = data[0].index.masProyectos;
-        masContactos.textContent = data[0].index.masContactos;
-        video1.src = data[0].index.video1;
-        video2.src = data[0].index.video2;
-        video3.src = data[0].index.video3;
-    } else {
-        // Cambiar de nuevo al español
-        proyectoNav.textContent = 'PROYECTOS';
-        servicioNav.textContent = 'SERVICIOS Y ESTUDIO';
-        contactoNav.textContent = 'CONTACTOS';
-        footer.textContent = 'Todos los derechos reservados.';
-        spanish.textContent = 'ESPAÑOL';
-        eslogan.textContent = 'Diseñamos tus sueños, construimos tu realidad.';
-        masServicios.textContent = 'ver mas servicios';
-        masProyectos.textContent = 'ver mas proyectos';
-        masContactos.textContent = 'ver mas contactos';
-        video1.src = './multimedia/index1.mp4';
-        video2.src = './multimedia/index2.mp4';
-        video3.src = './multimedia/index3.mp4';
-    }
+    const contenedor = document.getElementById('idiomaContent');
+    contenedor.classList.add('hidden');
+    setTimeout(() => {
+        if (lenguajeInput.checked) {
+            proyectoNav.textContent = data[0].navbar.liNavProyecto;
+            servicioNav.textContent = data[0].navbar.liNavServicio;
+            contactoNav.textContent = data[0].navbar.liNavContacto;
+            spanish.textContent = 'ENGLISH';
+            eslogan.textContent = data[0].index.sloganPrincipal;
+            footer.textContent = data[0].footers.footer;
+            masServicios.textContent = data[0].index.masServicios;
+            masProyectos.textContent = data[0].index.masProyectos;
+            masContactos.textContent = data[0].index.masContactos;
+            video1.src = data[0].index.video1;
+            video2.src = data[0].index.video2;
+            video3.src = data[0].index.video3;
+        } else {
+            proyectoNav.textContent = 'PROYECTOS';
+            servicioNav.textContent = 'SERVICIOS Y ESTUDIO';
+            contactoNav.textContent = 'CONTACTOS';
+            spanish.textContent = 'ESPAÑOL';
+            eslogan.textContent = 'Diseñamos tus sueños, construimos tu realidad.';
+            footer.textContent = 'Todos los derechos reservados.';
+            masServicios.textContent = 'ver mas servicios';
+            masProyectos.textContent = 'ver mas proyectos';
+            masContactos.textContent = 'ver mas contactos';
+            video1.src = './multimedia/index1.mp4';
+            video2.src = './multimedia/index2.mp4';
+            video3.src = './multimedia/index3.mp4';
+        }
+
+        contenedor.classList.remove('hidden');
+    }, 500);
 }
 
 // Escuchar cambios en el checkbox lenguaje

@@ -25,7 +25,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.fade-content {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.fade-content.hidden {
+    opacity: 0;
+}
+
 .contenidoMain {
+    opacity: 0; /* Oculta el contenido inicialmente */
+    transition: opacity 1s ease-in-out;
+}
+
+#contenidoMains {
     opacity: 0; /* Oculta el contenido inicialmente */
     transition: opacity 1s ease-in-out;
 }
@@ -727,7 +741,7 @@ h3 {
 .mundi:hover,
 .spanEspañol:hover {
     color: #c5c5c5;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .separadorSpan {
@@ -788,7 +802,7 @@ h3 {
 
 .imagenes2 {
     margin: 0 auto;
-    background-image: url(../multimedia/img/contactoPlanos.jpg);
+    background-image: url(../multimedia/img/Diego3.png);
     height: 350px;
     width: 80%;
     background-repeat: no-repeat;
