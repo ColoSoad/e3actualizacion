@@ -160,9 +160,9 @@ main {
     opacity: 1;
 }
 
-.padd {
+/* .padd {
     padding: 30px 0 0 0;
-}
+} */
 
 h1 {
     padding: 20px;
@@ -243,13 +243,13 @@ h1 {
     margin: 50px auto 50px auto;
 }
 
-.logoFIjo {
+/* .logoFIjo {
     height: 300px;
     padding: 0 0 30px 0;
     background-image: url(../multimedia/img/logo.jpg);
     background-size: cover;
     background-position: center;
-}
+} */
 
 dialog {
     border: none; /* Elimina el borde por defecto */
@@ -488,9 +488,9 @@ h3 {
     animation-fill-mode: both;
 }
 
-.row {
+/* .row {
     justify-content: center;
-}
+} */
 .areatext {
     padding: 30px 0 0 0;
 }
@@ -510,13 +510,13 @@ h3 {
     text-transform: uppercase;
 }
 
-.tarjetas {
+/* .tarjetas {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .container {
     width: 1000px;
@@ -526,22 +526,22 @@ h3 {
     justify-content: center;
 }
 
-.card {
+/* .card {
     position: relative;
     cursor: pointer;
     background-color: transparent;
     border-radius: 10%;
     border: none;
-}
+} */
 
-.face {
+/* .face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
     border-radius: 10%;
-}
+} */
 
-.face1 {
+/* .face1 {
     position: relative;
     background: #333;
     display: flex;
@@ -583,9 +583,9 @@ h3 {
 
 .container .card:hover .face.face1 .content {
     opacity: 1;
-}
+} */
 
-.tituloTarjeta {
+/* .tituloTarjeta {
     transform: translateY(70%);
     color: #fff;
     text-align: center;
@@ -593,7 +593,7 @@ h3 {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-}
+} */
 
 .parrafoService {
     color: #ffffff80;
@@ -604,7 +604,7 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.matricula {
+/* .matricula {
     transform: translateY(20%);
     color: #0b0b0b;
     text-align: center;
@@ -638,7 +638,7 @@ h3 {
 .container .card:hover .face.face2 {
     transform: translateY(5);
     border-radius: 0% 0 25% 0;
-}
+} */
 
 .miFooter {
     width: 100%;
@@ -758,14 +758,14 @@ h3 {
     cursor: pointer;
 }
 
-.tarjet {
+/* .tarjet {
     width: 90%;
     height: auto;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .video-container {
     position: fixed;
@@ -990,8 +990,6 @@ form {
     margin-bottom: 25px;
 }
 
-/* /////////////////////////////////////////////////////////////////// */
-
 .inicioMain {
     display: flex;
     flex-direction: column;
@@ -1198,9 +1196,9 @@ form {
     .textoPrincipalService {
         border-radius: 25% 0%;
     }
-    .padd {
+    /* .padd {
         padding: 15px 0 0 0;
-    }
+    } */
     .inicio {
         height: 450px;
         background-image: url(../multimedia/img/logo3.jpg);
@@ -1603,7 +1601,7 @@ form {
         padding-bottom: 75px;
     }
 
-    .logoFIjo {
+    /* .logoFIjo {
         grid-column: 1/2;
         grid-row: 1/3;
         height: 600px;
@@ -1611,7 +1609,7 @@ form {
         background-image: url(../multimedia/img/logo.jpg);
         background-size: cover;
         background-position: center;
-    }
+    } */
 
     .proyecto {
         grid-template-columns: 1fr 1fr;
@@ -1722,7 +1720,7 @@ form {
         width: 100%;
     }
 
-    .card1 {
+    /* .card1 {
         margin: 0 50px 0 0;
         transform: translateY(-70px);
     }
@@ -1730,7 +1728,7 @@ form {
     .card2 {
         margin: 0 0 0 0px;
         transform: translateY(35px);
-    }
+    } */
 
     .formularios {
         width: 50%;
@@ -2044,7 +2042,7 @@ form {
         font-size: 38px;
     }
 
-    .logoFIjo {
+    /* .logoFIjo {
         grid-column: 1/2;
         grid-row: 1/3;
         height: 600px;
@@ -2052,7 +2050,7 @@ form {
         background-image: url(../multimedia/img/logo.jpg);
         background-size: cover;
         background-position: center;
-    }
+    } */
 
     .proyecto {
         grid-template-columns: 1fr 1fr 1fr;
@@ -2131,7 +2129,7 @@ form {
         height: 620px;
     }
 
-    .card1 {
+    /* .card1 {
         margin: 0 50px 0 0;
         transform: translateY(-70px);
     }
@@ -2139,7 +2137,7 @@ form {
     .card2 {
         margin: 0 0 0 0px;
         transform: translateY(35px);
-    }
+    } */
 
     .h1contact {
         margin: 0%;
