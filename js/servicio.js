@@ -25,7 +25,6 @@ const video3English = document.querySelector('#videoTresService');
 const video4English = document.querySelector('#videoCuatroService');
 const video5English = document.querySelector('#videoCincoService');
 const loader = document.getElementById('loader');
-const contenidoMains = document.querySelector('.mainServices');
 
 // VARIABLES
 const URL = '../json/en.json';
@@ -114,30 +113,4 @@ instagram.addEventListener('click', (e) => {
     window.open('https://www.instagram.com/estudio.3_arq?igsh=MXhqMTZpb2Vtb3Focw==', '_blank');
 });
 
-async function esperarCargaVideos(video1English) {
-    return new Promise((resolve) => {
-        const interval = setInterval(() => {
-            if (video1English.buffered.length > 0 && video1English.duration) {
-                let porcentajeCargado = (video1English.buffered.end(0) / video1English.duration) * 100;
-
-                if (porcentajeCargado >= 50) {
-                    clearInterval(interval); // Detener el intervalo
-                    resolve(); // Continuar con la ejecución
-                }
-            }
-        }, 100);
-    });
-}
-
-async function inicializarPagina() {
-    // Espera a que el video cargue al menos al 50%
-    await esperarCargaVideos(video1English);
-    // Ocultar el loader
-    loader.style.display = 'none';
-
-    // Mostrar el contenido con una transición suave
-    contenidoMains.style.opacity = '1';
-}
-
-inicializarPagina();
 recuperarInfoDePreferences();
