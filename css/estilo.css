@@ -311,6 +311,7 @@ button {
     filter: saturate(3);
     filter: brightness(2);
     filter: contrast(1.15);
+    box-shadow: 0px 0px 50px 20px rgba(76, 112, 219, 0.3);
 }
 
 .bun {
